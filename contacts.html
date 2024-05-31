@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header header-mb-contact">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="header-btn">
+                    <svg class="header-svg" width="21" height="14">
+                        <use href="./symbol-defs.svg#arrow"></use>
+                    </svg>
+                </button>
+    
+                <button class="burger-btn burger-btn-about menu-open-btn">
+                    <svg class="burger-svg" width="21" height="15">
+                        <use href="./symbol-defs.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container mob-menu-container">
+                <div class="mob-menu-top">
+                    <button class="menu-btn menu-close-btn" type="button">
+                        <svg class="menu-svg" width="10" height="10">
+                            <use href="./symbol-defs.svg#close"></use>
+                        </svg>
+                    </button>
+
+                        <nav class="nav-menu">
+                            <ul class="nav-menu-list">
+                                <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
+                                <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
+                                <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
+                                <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
+                                <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">home</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero section-hero-mb section-hero-mb-contact">
+            <div class="container">
+                <h1 class="hero-title hero-title-contact">Artist Details</h1>
+
+                <ul class="contact-list">
+                    <li class="contact-list-item">
+                        <svg class="contact-svg" width="18" height="16">
+                            <use href="./symbol-defs.svg#phone"></use>
+                            <p class="contact-title">Phone</p>
+                        </svg>
+
+                        <p class="contact-list-desc">+123 456 789 101</p>
+                        <p class="contact-list-desc">+321 101 987 654</p>
+                    </li>
+                    <li class="contact-list-item">
+                        <svg class="contact-svg" width="18" height="17">
+                            <use href="./symbol-defs.svg#email"></use>
+                            <p class="contact-title">E-mail</p>
+                        </svg>
+                        <p class="contact-list-desc">artistname@singervib</p>
+                    </li>
+                    <li class="contact-list-item">
+                        <svg class="contact-svg" width="18" height="17">
+                            <use href="./symbol-defs.svg#conect"></use>
+                            <p class="contact-title">Connect with</p>
+                        </svg>
+                    </li>
+                </ul>
+
+                <ul class="social-list">
+                    <li class="social-list-item">
+                        <button class="social-btn">
+                            <svg class="social-svg" width="23" height="22">
+                                <use href="./symbol-defs.svg#utube"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="social-list-item">
+                        <button class="social-btn">
+                            <svg class="social-svg" width="23" height="22">
+                                <use href="./symbol-defs.svg#ig"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-mb footer-mb-about">
+        <div class="container">
+            <div class="footer-container">
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="22" height="20">
+                            <use href="./symbol-defs.svg#home"></use>
+                        </svg>
+                        <a href="./index.html" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="20" height="20">
+                            <use href="./symbol-defs.svg#search"></use>
+                        </svg>
+                        <a class="footer-menu-list-link footer-menu-list-link-about">Search</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="26" height="23">
+                            <use href="./symbol-defs.svg#library"></use>
+                        </svg>
+                        <a class="footer-menu-list-link footer-menu-list-link-about">Library</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./burger.js"></script>
+</body>
+</html>

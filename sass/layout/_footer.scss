@@ -1,0 +1,79 @@
+.footer-mb{
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+
+    &-about{
+        position: static;
+        box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
+        padding: 12px 0 14px 0;
+    }
+}
+
+.footer-menu-list{
+    @include positioning(flex, _, center, center, 55px, _);
+
+
+    &-item{
+        color: $grey;
+        @include positioning(flex, column, center, center, _, _);
+
+        &:first-child{
+            color: $red;
+        }
+    }
+
+    &-link{
+        color: $white;
+
+        &-first{
+            color: $red;
+        }
+
+        &-about{
+            color: $grey;
+        }
+    }
+
+    &-svg{
+        fill: currentColor;
+        margin-bottom: 2px;
+    }
+
+    @include tab(744px){
+        display: none;
+    }
+}
+
+    // tab
+.footer-tab{
+    position: absolute;
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+}
+
+.footer-wrapper{
+    display: none;
+    @include tab(744px){
+        display: block;
+        @include positioning(flex, _, space-between, _, _, _);
+    }
+}
+
+.footer-link{
+    color: $white;
+    @include positioning(flex, _, _, center, 17px, _);
+}
+
+.footer-desc{
+    color: $white;
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 7px;
+    @include lh(7, 3);
+}
+
+.footer-svg{
+    fill: currentColor;
+}

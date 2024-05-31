@@ -1,0 +1,118 @@
+.section-hero-mb{
+    @include bg-image("../main/mb-webp/bg-main-mb-1x.webp", "../main-mb/bg-main-mb-1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $rufina;
+    padding: 292px 0 308px 0;
+
+    &-about{
+        padding: 26px 0 52px 0;
+    }
+
+    &-video, &-music{
+        padding: 29px 0 19px 0;
+    }
+
+    &-contact{
+        padding-top: 50px;
+    }
+}
+
+.section-hero-tab{
+    @include tab(744px){
+        padding: 241px 0 219px 0;
+        @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
+        background-size: cover;
+    }
+}
+
+.hero-title{
+    margin-bottom: 46px;
+    font-size: 24px;
+    @include lh(24, 30);
+    font-weight: 700;
+    text-align: center;
+    color: $red;
+
+    &-about{
+        font-family: $rufina;
+        color: $red;
+        font-weight: 700;
+        font-size: 24px;
+        @include lh(24, 30);
+        margin: 22px 0 26px;
+    }
+
+    &-mb-video, &-mb-music{
+        font-family: $raleway;
+        font-size: 32px;
+        font-weight: 700;
+        @include lh(32, 38);
+        color: $blue;
+        margin: 30px auto 0 auto;
+    }
+
+    &-contact{
+        font-family: $sans;
+        color: $white;
+        text-align: left;
+        font-size: 32px;
+        @include lh(32, 40);
+    }
+
+    @include tab(744px){
+        margin-bottom: 49px;
+    }
+}
+
+.hero-desc{
+    display: block;
+    font-family: $lexend;
+    font-size: 16px;
+    @include lh(16, 20);
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+
+    &-about{
+        color: $dark-blue;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 14px;
+        @include lh(14, 17);
+        margin-bottom: 20px;
+    }
+    
+    &-video, &-music{
+        font-family: $raleway;
+        font-size: 18px;
+        font-weight: 400;
+        @include lh(18, 21);
+        color: $red;
+        margin: 0 auto 30px auto;
+    }
+}
+
+.hero-svg{
+    fill: currentColor;
+}
+
+.hero-img{
+    margin: 0 auto;
+    border-radius: 24px;
+
+    @include tab(744px){
+        border-radius: 0;
+    }
+}
+
+    // hero-tab
+.hero-picture{
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.hero-wrapper{
+    
+}

@@ -1,0 +1,55 @@
+.hero-btn{
+    display: block;
+    padding: 9px 0 10px;
+    background-color: inherit;
+    color: $red;
+    margin: 0 auto;
+
+    &-about{
+        background-color: $tomato;
+        border-radius: 8px;
+        padding: 12px 30px;
+        @include positioning(flex, _, center, center, 7px, _);
+        color: $white;
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 14px;
+        @include lh(14, 16);
+        margin: 26px auto;
+    }
+
+    @include tab(744px){
+        margin: 0 auto 28px auto;
+    }
+}
+
+.track-btn{
+    margin-top: 28px;
+    padding: 12px 13px;
+    border-radius: 50%;
+    border: 1px solid $blue;
+    width: 40px;
+    height: 39px;
+    background-color: inherit;
+    @include positioning(flex, _, center, center, _, _);
+    color: $blue;
+}
+
+.btn-control{
+    background-color: inherit;
+
+    &-like{
+        color: $red;
+        @include positioning(flex, column, center, center, 12px, _);
+    }
+
+    &-import{
+        color: $grey;
+        @include positioning(flex, column, center, center, 12px, _);
+    }
+}
+
+.social-btn{
+    background-color: inherit;
+    color: $white;
+}

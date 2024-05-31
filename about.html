@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header header-mb-about">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="header-btn">
+                    <svg class="header-svg" width="21" height="14">
+                        <use href="./symbol-defs.svg#arrow"></use>
+                    </svg>
+                </button>
+                <h2 class="header-title">Artist detail</h2>
+    
+                <button class="burger-btn burger-btn-about menu-open-btn">
+                    <svg class="burger-svg" width="21" height="15">
+                        <use href="./symbol-defs.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container mob-menu-container">
+                <div class="mob-menu-top">
+                    <button class="menu-btn menu-close-btn" type="button">
+                        <svg class="menu-svg" width="10" height="10">
+                            <use href="./symbol-defs.svg#close"></use>
+                        </svg>
+                    </button>
+
+                        <nav class="nav-menu">
+                            <ul class="nav-menu-list">
+                                <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
+                                <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
+                                <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
+                                <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
+                                <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">home</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero section-hero-mb-about">
+            <div class="container">
+                <picture class="hero-picture">
+                    <source media="(max-width:375px)" srcset="./main/mb-webp/img-about-mb-1x.webp 1x, ./main/mb-webp/img-about-mb-2x.webp 2x, ./main/mb-webp/img-about-mb-3x.webp 3x" type="image/webp">
+                    <source media="(max-width:375px)" srcset="./main/mb/img-about-mb-1x.jpg 1x, ./main/mb/img-about-mb-2x.jpg 2x, ./main/mb/img-about-mb-3x.jpg 3x" type="image/jpeg">
+                    <img class="hero-img" src="./main/mb/img-about-mb-1x.jpg" alt="">
+                </picture>
+                
+                <button class="hero-btn-about">
+                    <svg class="svg-about" width="21" height="21">
+                        <use href="./symbol-defs.svg#follow"></use>
+                    </svg>
+                    Follow
+                </button>
+
+                <h1 class="hero-title-about">ALINA KOPYLOVA</h1>
+
+                <p class="hero-desc-about">новий подих сучасної української музики. Яскрава, енергійна але водночас щира та романтична, вона починає свій музичний шлях з авторським синглом! </p>
+                <p class="hero-desc-about">Аліна закінчила профільну  Школу естрадного мистецтва за спеціалізацією «Музичне мистецтво», але повʼязала своє життя з медициною і стала - успішним лікарем-стоматологом. Вона робить сяючі посмішки багатьом зіркам українського шоу-бізнесу і не тільки, а тепер і сама вирішила почати свою творчу карʼєру.</p>
+                <p class="hero-desc-about">Пісня «Я повернусь» описує стан, який знайомий кожному з нас. Коли незважаючи на біль, численні втрати та розлуку з близькими, ми знаходимо в собі сили жити далі, тут і зараз, проживати щасливі моменти. І попри все, ми маємо віднайти ті самі крила, щоб рухатись далі!</p>
+                <p class="hero-desc-about">Alina Kopylova - a new breath of modern Ukrainian music. Bright, energetic, but at the same time sincere and romantic, she begins her musical journey with an author's single!</p>
+                <p class="hero-desc-about">Alina graduated from the Professional School of Pop Art with a specialization in "Musical Art", but connected her life with medicine and became a successful dentist.</p>
+                <p class="hero-desc-about">She gives bright smiles to many stars of Ukrainian show business and not only, but now she herself has decided to start her creative career.</p>
+                <p class="hero-desc-about">The song "Ya Povernus" ("I'll Be Back") describes a state familiar to all of us. When despite pain, numerous losses and separation from loved ones, we find the strength to live on, here and now, to live happy moments. And despite everything, we have to find wings to move on!</p>
+            </div>
+        </section>
+        <section class="section-track">
+            <div class="container">
+                <h2 class="track-title">Top tracks</h2>
+                <div class="track-container">
+                    <picture>
+                        <sourse media="(max-width:375px)" srcset="./main/mb-webp/img-track-mb-1x.webp 1x, ./main/mb-webp/img-track-mb-2x.webp 2x, ./main/mb-webp/img-track-mb-3x.webp 3x" type="image/webp">
+                        <sourse media="(max-width:375px)" srcset="./main/mb/img-track-mb-1x.jpg 1x, ./main/mb/img-track-mb-2x.jpg 2x, ./main/mb/img-track-mb-3x.jpg 3x" type="image/jpeg">
+                        <img class="img-track"  src="./main/mb/img-track-mb-1x.jpg" alt="">
+                    </picture>
+                    <div class="track-container-name">
+                        <h3 class="name-title">ALINA KOPYLOVA</h3>
+                        <p class="name-desc">Я повернусь</p>
+                    </div>
+                    <button class="track-btn">
+                        <svg class="track-svg" width="14" height="14">
+                            <use href="./symbol-defs.svg#play"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-mb footer-mb-about">
+        <div class="container">
+            <div class="footer-container">
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="22" height="20">
+                            <use href="./symbol-defs.svg#home"></use>
+                        </svg>
+                        <a href="./index.html" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="20" height="20">
+                            <use href="./symbol-defs.svg#search"></use>
+                        </svg>
+                        <a class="footer-menu-list-link footer-menu-list-link-about">Search</a>
+                    </li>
+                    <li class="footer-menu-list-item">
+                        <svg class="footer-menu-list-svg" width="26" height="23">
+                            <use href="./symbol-defs.svg#library"></use>
+                        </svg>
+                        <a class="footer-menu-list-link footer-menu-list-link-about">Library</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./burger.js"></script>
+</body>
+</html>

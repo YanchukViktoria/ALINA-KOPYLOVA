@@ -1,0 +1,18 @@
+.nav{
+    display: none;
+    &-list{
+        @include positioning(flex, _, flex-end, center, 30px, _);
+
+        &-link{
+            color: $white;
+            font-family: $lato;
+            font-weight: 400;
+            font-size: 16px;
+            @include lh(16, 24);
+        }
+    }
+
+    @include tab(744px){
+        display: block;
+    }
+}

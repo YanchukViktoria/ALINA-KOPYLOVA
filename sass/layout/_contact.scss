@@ -1,0 +1,26 @@
+.contact-svg{
+    fill: currentColor;
+    color: $white;
+    @include positioning(flex, row, _, _, 8px, _);
+}
+
+.contact-list{
+    @include positioning(flex, column, _, _, _, _);
+
+    &-item{
+        color: $white;
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        @include lh(16, 19);
+    }
+    
+}
+
+.social-svg{
+    fill: currentColor;
+}
+
+.social-list{
+    @include positioning(flex, _, _, _, 9px, _);
+}

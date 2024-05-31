@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header header-mb-music">
+        <div class="container">
+            <div class="header-wrap">
+                <button class="header-btn">
+                    <svg class="header-svg" width="21" height="14">
+                        <use href="./symbol-defs.svg#arrow"></use>
+                    </svg>
+                </button>
+    
+                <button class="burger-btn burger-btn-about menu-open-btn">
+                    <svg class="burger-svg" width="21" height="15">
+                        <use href="./symbol-defs.svg#burger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mob-menu is-hidden">
+            <div class="container mob-menu-container">
+                <div class="mob-menu-top">
+                    <button class="menu-btn menu-close-btn" type="button">
+                        <svg class="menu-svg" width="10" height="10">
+                            <use href="./symbol-defs.svg#close"></use>
+                        </svg>
+                    </button>
+
+                        <nav class="nav-menu">
+                            <ul class="nav-menu-list">
+                                <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
+                                <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
+                                <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
+                                <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
+                                <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">home</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section-hero section-hero-mb-music">
+            <div class="container">
+                <picture class="hero-picture">
+                    <source media="(max-width:375px)" srcset="./main/mb-webp/img-music-mb-1x.webp 1x, ./main/mb-webp/img-music-mb-2x.webp 2x, ./main/mb-webp/img-music-mb-3x.webp 3x" type="image/webp">
+                    <source media="(max-width:375px)" srcset="./main/mb/img-music-mb-1x.jpg 1x, ./main/mb/img-music-mb-2x.jpg 2x, ./main/mb/img-music-mb-3x.jpg 3x" type="image/jpeg">
+                    <img class="hero-img" src="./main/mb/img-music-mb-1x.jpg" alt="">
+                </picture>
+
+                <h1 class="hero-title hero-title-music">ALINA KOPYLOVA</h1>
+                <p class="hero-desc hero-desc-music">Я повернусь</p>
+            </div>
+        </section>
+        <section class="section-control">
+            <div class="container">
+
+                <input class="control-input" type="range">
+
+                <div class="control-container">
+                    <button class="btn-control">
+                        <svg class="svg-control" width="23" height="18">
+                            <use href="./symbol-defs.svg#past"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-control btn-control-stop">
+                        <svg class="svg-control" width="13" height="17">
+                            <use href="./symbol-defs.svg#stop"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-control">
+                        <svg class="svg-control" width="23" height="18">
+                            <use href="./symbol-defs.svg#next"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./burger.js"></script>
+</body>
+</html>

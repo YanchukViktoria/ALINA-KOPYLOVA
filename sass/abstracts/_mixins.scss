@@ -1,0 +1,32 @@
+@mixin lh($fs, $lh){
+    $lhe: calc($lh / $fs);
+    line-height: $lhe;
+}
+
+@mixin tab($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin desc($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin bg-image($webp, $fallback){
+    @supports (background-image: url("#{$webp}")){
+        background-image: url("#{$webp}");
+    }
+    background-image: url("#{$fallback}");
+}
+
+@mixin positioning($disp, $fd, $jc, $al, $gp, $wr){
+    display: $disp;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $al;
+    gap: $gp;
+    flex-wrap: $wr;
+} 

@@ -1,0 +1,48 @@
+.header-mb{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 19px 0;
+
+    @include desc(1440px){
+        padding: 36px 0;
+    }
+
+    &-about, &-video, &-contact, &-music{
+        padding: 22px 0;
+        box-shadow: 0px 2px 10px 0px rgba(104, 108, 112, 0.2);
+        @include tab(744px){
+            padding: 25px 0;
+            box-shadow: none;
+        }
+    }
+
+}
+
+.header-wrap{
+    @include positioning(flex, _, _, center, _, _);
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.header-title{
+    margin-left: auto;
+}
+
+.header-btn{
+    background-color: inherit;
+}
+
+.header-title{
+    font-family: $raleway;
+    font-weight: 400;
+    font-size: 18px;
+    @include lh(18, 21);
+    color: $dark-blue;
+}
+
+
+.header-tab{
+    padding: 31px 0;
+}

@@ -1,0 +1,21 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./abstracts/placeholders";
+
+@import "./base/container";
+@import "./base/reset";
+@import "./base/body";
+
+@import "./components/btn";
+@import "./components/burger";
+@import "./components/nav-menu";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/footer";
+@import "./layout/track";
+@import "./layout/control";
+@import "./layout/contact";
+@import "./layout/video";
+@import "./layout/music";
+@import "./components/nav";

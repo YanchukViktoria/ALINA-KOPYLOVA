@@ -1,0 +1,44 @@
+.section-track{
+    margin-bottom: 46px;
+}
+
+.track-container{
+    @include positioning(flex, _, _, _, _, _);
+}
+
+.track-title{
+    font-family: $raleway;
+    font-weight: 700;
+    font-style: 20px;
+    @include lh(20, 23);
+    color: $dark-blue;  
+    margin-bottom: 11px;
+}
+
+.img-track{
+    border-radius: 20px;
+}
+
+.track-container-name{
+    margin: 9px auto 0 9px;
+}
+
+.name-title{
+    font-family: $raleway;
+    font-weight: 500;
+    font-style: 16px;
+    @include lh(16, 19);
+    color: $red;    
+}
+
+.name-desc{
+    font-family: $raleway;
+    font-weight: 500;
+    font-style: 16px;
+    @include lh(16, 19);
+    color: $blue;
+}
+
+.track-svg{
+    fill: currentColor;
+}

@@ -5,7 +5,8 @@
 }
 
 .contact-list{
-    @include positioning(flex, column, _, _, _, _);
+    @include positioning(flex, column, _, _, 16px, _);
+    margin-bottom: 16px;
 
     &-item{
         color: $white;
@@ -13,8 +14,8 @@
         font-weight: 400;
         font-size: 16px;
         @include lh(16, 19);
+        @include positioning(flex, _, _, center, 8px, _);
     }
-    
 }
 
 .social-svg{

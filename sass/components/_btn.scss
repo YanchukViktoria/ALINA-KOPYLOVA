@@ -1,9 +1,10 @@
 .hero-btn{
     display: block;
-    padding: 9px 0 10px;
+    padding: 0;
     background-color: inherit;
     color: $red;
     margin: 0 auto;
+    @include positioning(flex, _ , center, center,_, _);
 
     &-about{
         background-color: $tomato;
@@ -35,8 +36,9 @@
     color: $blue;
 }
 
-.btn-control{
+.btn-music{
     background-color: inherit;
+    color: $blue;
 
     &-like{
         color: $red;
@@ -47,9 +49,53 @@
         color: $grey;
         @include positioning(flex, column, center, center, 12px, _);
     }
+
+    &-stop{
+        padding: 22px 21px;
+        border: 2px solid $blue;
+        border-radius: 50%;
+    }
+
+    &-tab{
+        display: none;
+        @include tab(744px){
+            display: block;
+            color: $white;
+            background-color: inherit;
+            padding: 0;
+        }
+    }
 }
 
 .social-btn{
     background-color: inherit;
     color: $white;
+    padding: 0;
+}
+
+.header-btn{
+    background-color: inherit;
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.form-btn{
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 50px;
+    color: $white;
+    background-color: $light-tomato;
+    font-family: $sans;
+    font-size: 18px;
+    font-weight: 700;
+    @include lh(18, 23);
+    text-align: center;
+}
+
+.hero-music-btn{
+    @include positioning(flex, _ , center, center, _, _);
+    padding: 5px;
+    background-color: $red;
+    border-radius: 50px;
 }

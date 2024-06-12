@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header header-mb-contact">
-        <div class="container">
-            <div class="header-wrap">
+    <header class="header header-contact">
+        <div class="container container-header-wrapper">
                 <button class="header-btn">
                     <svg class="header-svg" width="21" height="14">
                         <use href="./symbol-defs.svg#arrow"></use>
@@ -28,7 +27,15 @@
                         <use href="./symbol-defs.svg#burger"></use>
                     </svg>
                 </button>
-            </div>
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="./about.html" class="nav-list-link">About</a></li>
+                        <li class="nav-list-item"><a href="./music.html" class="nav-list-link">Music</a></li>
+                        <li class="nav-list-item"><a href="./video.html" class="nav-list-link">Video</a></li>
+                        <li class="nav-list-item"><a href="./contacts.html" class="nav-list-link">Contact</a></li>
+                    </ul>
+                </nav>
         </div>
         <div class="mob-menu is-hidden">
             <div class="container mob-menu-container">
@@ -53,55 +60,76 @@
         </div>
     </header>
     <main>
-        <section class="section-hero section-hero-mb section-hero-mb-contact">
-            <div class="container">
-                <h1 class="hero-title hero-title-contact">Artist Details</h1>
+        <section class="section-hero section-hero-contact">
+            <div class="container container-hero-wrapp">
+                <div class="hero-box">
+                    <h1 class="hero-title hero-title-contact">Artist Details</h1>
 
-                <ul class="contact-list">
-                    <li class="contact-list-item">
-                        <svg class="contact-svg" width="18" height="16">
-                            <use href="./symbol-defs.svg#phone"></use>
-                            <p class="contact-title">Phone</p>
-                        </svg>
-
-                        <p class="contact-list-desc">+123 456 789 101</p>
-                        <p class="contact-list-desc">+321 101 987 654</p>
-                    </li>
-                    <li class="contact-list-item">
-                        <svg class="contact-svg" width="18" height="17">
-                            <use href="./symbol-defs.svg#email"></use>
-                            <p class="contact-title">E-mail</p>
-                        </svg>
-                        <p class="contact-list-desc">artistname@singervib</p>
-                    </li>
-                    <li class="contact-list-item">
-                        <svg class="contact-svg" width="18" height="17">
-                            <use href="./symbol-defs.svg#conect"></use>
-                            <p class="contact-title">Connect with</p>
-                        </svg>
-                    </li>
-                </ul>
-
-                <ul class="social-list">
-                    <li class="social-list-item">
-                        <button class="social-btn">
-                            <svg class="social-svg" width="23" height="22">
-                                <use href="./symbol-defs.svg#utube"></use>
+                    <ul class="contact-list">
+                        <li class="contact-list-item">
+                            <svg class="contact-svg" width="18" height="16">
+                                <use href="./symbol-defs.svg#phone"></use>
                             </svg>
-                        </button>
-                    </li>
-                    <li class="social-list-item">
-                        <button class="social-btn">
-                            <svg class="social-svg" width="23" height="22">
-                                <use href="./symbol-defs.svg#ig"></use>
+                            <p class="contact-list-desc">+380 976 157 609</p>
+                        </li>
+                        <li class="contact-list-item">
+                            <svg class="contact-svg" width="18" height="17">
+                                <use href="./symbol-defs.svg#email"></use>
                             </svg>
-                        </button>
-                    </li>
-                </ul>
+                            <p class="contact-list-desc">alinakopilova15@gmail.com</p>
+                        </li>
+                        <li class="contact-list-item">
+                            <svg class="contact-svg" width="18" height="17">
+                                <use href="./symbol-defs.svg#conect">Connect with</use>
+                            </svg>
+                            <p>Connect with</p>
+                        </li>
+                    </ul>
+
+                    <ul class="social-list">
+                        <li class="social-list-item">
+                            <button class="social-btn">
+                                <svg class="social-svg" width="23" height="22">
+                                    <use href="./symbol-defs.svg#utube"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="social-list-item">
+                            <button class="social-btn">
+                                <svg class="social-svg" width="23" height="22">
+                                    <use href="./symbol-defs.svg#ig"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-container">
+                    <form class="footer-hero" action="">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <label class="hero-label" for="" class="footer-list-label">First Name</label>
+                                <input class="hero-input" placeholder="Singer" type="text" class="footer-list-input">
+                            </li>
+                            <li class="footer-list-item">
+                                <label class="hero-label" for="" class="footer-list-label">Last Name</label>
+                                <input class="hero-input" placeholder="Vibe" type="text" class="footer-list-input">
+                            </li>
+                            <li class="footer-list-item">
+                                <label class="hero-label" for="" class="footer-list-label">E-mail</label>
+                                <input class="hero-input hero-input-mail" placeholder="contact@singervibe.com" type="text" class="footer-list-input">
+                            </li>
+                        </ul>
+                        <div class="form-wrapper">
+                            <label class="hero-label hero-label-teaxtarea" for="">Inquiry</label>
+                            <textarea class="hero-textarea" placeholder="Type your inquiry" name="" id=""></textarea>
+                        </div>
+                        <button class="form-btn">Send</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer footer-mb footer-mb-about">
+    <footer class="footer">
         <div class="container">
             <div class="footer-container">
                 <ul class="footer-menu-list">
@@ -115,15 +143,30 @@
                         <svg class="footer-menu-list-svg" width="20" height="20">
                             <use href="./symbol-defs.svg#search"></use>
                         </svg>
-                        <a class="footer-menu-list-link footer-menu-list-link-about">Search</a>
+                        <a class="footer-menu-list-link">Search</a>
                     </li>
                     <li class="footer-menu-list-item">
                         <svg class="footer-menu-list-svg" width="26" height="23">
                             <use href="./symbol-defs.svg#library"></use>
                         </svg>
-                        <a class="footer-menu-list-link footer-menu-list-link-about">Library</a>
+                        <a class="footer-menu-list-link">Library</a>
                     </li>
                 </ul>
+
+                <div class="footer-wrapper">
+                    <a href="#" class="footer-link">
+                        <svg class="footer-svg" width="11" height="11">
+                            <use href="./symbol-defs.svg#subscribe"></use>
+                        </svg>
+                        <p class="footer-desc">Підписатися</p>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <p class="footer-desc">Слухати</p>
+                        <svg class="footer-svg" width="12" height="12">
+                            <use href="./symbol-defs.svg#headphones"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

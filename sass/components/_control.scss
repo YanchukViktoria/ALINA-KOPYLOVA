@@ -1,0 +1,62 @@
+.section-music{
+    @include tab(744px){
+        position: absolute;
+        top: 0;
+    }
+}
+
+.svg-music{
+    fill: currentColor;
+}
+
+.music-container{
+    margin-top: 9px;
+    @include positioning(flex, _, center, center, 32px, _);
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.music-wrapper{
+    @include tab(744px){
+        @include positioning(flex, _, center, center, 14px, _);
+    }
+}
+
+.music-input{
+    width: 100%;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: "17:05";
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 12px;
+        color: $grey;
+        bottom: 20px;
+    }
+
+    &::after{
+        position: absolute;
+        content: "-11:14";
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 12px;
+        color: $grey;
+        bottom: 20px;
+        right: 0;
+    }
+
+    @include tab(744px){
+        max-width: 233px;
+        margin: 0 21px 0 44px;
+        &:before{
+            display: none;
+        }
+    
+        &::after{
+            display: none;
+        }
+    }
+}

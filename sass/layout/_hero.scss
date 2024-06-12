@@ -1,38 +1,64 @@
-.section-hero-mb{
-    @include bg-image("../main/mb-webp/bg-main-mb-1x.webp", "../main-mb/bg-main-mb-1x.jpg");
+.section-hero{
+    @include bg-image("../main/mb-webp/bg-main-mb-1x.webp", "../main/mb/bg-main-mb-1x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     font-family: $rufina;
     padding: 292px 0 308px 0;
 
-    &-about{
-        padding: 26px 0 52px 0;
+    @include tab(744px){
+        padding: 241px 0 219px 0;
+        background-size: contain;
+        @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
     }
 
-    &-video, &-music{
-        padding: 29px 0 19px 0;
+    &-about{
+        padding: 98px 0 52px 0;
+        background: none;
+        @include tab(74px){
+            box-shadow: none;
+        }
+    }
+
+    &-video{
+        padding: 108px 0 19px 0;
+        background-image: none;
+        @include tab(744px){
+            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
+            background-size: contain;
+            padding: 74px 0 76px 0;
+        }
+    }
+
+    &-music{
+        padding: 108px 0 19px 0;
+        background-image: none;
+
+        @include tab(744px){
+            padding: 88px 0 70px 0;
+            height: 100vh;
+            @include bg-image("../main/tab-webp/bg-music-tab-1x.webp", "../main/tab/bg-music-tab-1x.jpg");
+        }
     }
 
     &-contact{
-        padding-top: 50px;
-    }
-}
-
-.section-hero-tab{
-    @include tab(744px){
-        padding: 241px 0 219px 0;
-        @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
-        background-size: cover;
+        padding: 50px 0 340px 0;
+        @include tab(744px){
+            padding: 80px 0 98px 0;
+        }
     }
 }
 
 .hero-title{
-    margin-bottom: 46px;
+    margin-bottom: 55px;
     font-size: 24px;
     @include lh(24, 30);
     font-weight: 700;
     text-align: center;
     color: $red;
+
+    @include tab(744px){
+        margin-bottom: 49px;
+    }
 
     &-about{
         font-family: $rufina;
@@ -43,13 +69,22 @@
         margin: 22px 0 26px;
     }
 
-    &-mb-video, &-mb-music{
+    &-video{
         font-family: $raleway;
         font-size: 32px;
         font-weight: 700;
         @include lh(32, 38);
         color: $blue;
         margin: 30px auto 0 auto;
+        @include tab(744px){
+            text-align: left;
+            margin: 0 0 24px 0;
+            font-size: 24px;
+            font-weight: 700;
+            color: $red;
+            @include lh(24, 30);
+            font-family: $rufina;
+        }
     }
 
     &-contact{
@@ -58,16 +93,17 @@
         text-align: left;
         font-size: 32px;
         @include lh(32, 40);
-    }
-
-    @include tab(744px){
-        margin-bottom: 49px;
+        
+        @include tab(744px){
+            max-width: 181px;
+            margin-bottom: 0;
+        }
     }
 }
 
 .hero-desc{
     display: block;
-    font-family: $lexend;
+    font-family: 'lexend';
     font-size: 16px;
     @include lh(16, 20);
     font-weight: 400;
@@ -83,13 +119,16 @@
         margin-bottom: 20px;
     }
     
-    &-video, &-music{
+    &-video{
         font-family: $raleway;
         font-size: 18px;
         font-weight: 400;
         @include lh(18, 21);
         color: $red;
         margin: 0 auto 30px auto;
+        @include tab(744px){
+            display: none;
+        }
     }
 }
 
@@ -98,21 +137,36 @@
 }
 
 .hero-img{
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     border-radius: 24px;
 
     @include tab(744px){
         border-radius: 0;
+        margin-bottom: 38px;
     }
 }
 
-    // hero-tab
 .hero-picture{
+    display: block;
     @include tab(744px){
         display: none;
     }
 }
 
+.hero-picture-tab{
+    display: none;
+    @include tab(744px){
+        display: block;
+    }
+}
+
 .hero-wrapper{
-    
+    @include tab(744px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+.hero-box{
+    @include positioning(flex, column, _ ,_ , _, _);
 }

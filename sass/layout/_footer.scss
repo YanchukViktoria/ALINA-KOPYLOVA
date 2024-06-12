@@ -1,12 +1,26 @@
-.footer-mb{
+.footer{
     position: absolute;
     bottom: 18px;
     width: 100%;
+    padding: 18px 0;
 
     &-about{
         position: static;
         box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
         padding: 12px 0 14px 0;
+        background-color: $white;
+        @include tab(744px){
+            background: inherit;
+            box-shadow: none;
+            padding: 29px;
+        }
+    }
+
+    @include tab(744px){
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 30px 0;
     }
 }
 
@@ -16,7 +30,7 @@
 
     &-item{
         color: $grey;
-        @include positioning(flex, column, center, center, _, _);
+        @include positioning(flex, column, center, center, 7px, _);
 
         &:first-child{
             color: $red;
@@ -24,6 +38,10 @@
     }
 
     &-link{
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 12px;
+        @include lh(12, 14);
         color: $white;
 
         &-first{
@@ -45,14 +63,6 @@
     }
 }
 
-    // tab
-.footer-tab{
-    position: absolute;
-    width: 100%;
-    border: 0;
-    padding: 15px 0;
-}
-
 .footer-wrapper{
     display: none;
     @include tab(744px){
@@ -71,7 +81,7 @@
     font-family: $inter;
     font-weight: 400;
     font-size: 7px;
-    @include lh(7, 3);
+    @include lh(7, 12);
 }
 
 .footer-svg{

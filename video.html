@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header header-mb-video">
+    <header class="header header-video">
         <div class="container">
             <div class="header-wrap">
                 <button class="header-btn">
@@ -66,49 +66,79 @@
         <section class="section-hero section-hero-video">
             <div class="container">
 
-                <picture class="hero-picture-tab">
-                    <source media="(max-width:375px)" srcset="./main/tab-webp/img-track-tab-1x.webp 1x, ./main/tab-webp/img-track-tab-2x.webp 2x, ./main/tab-webp/img-track-tab-3x.webp 3x" type="image/webp">
-                    <source media="(max-width:375px)" srcset="./main/tab/img-track-tab-1x.jpg 1x, ./main/tab/img-track-tab-2x.jpg 2x, ./main/tab/img-track-tab-3x.jpg 3x" type="image/jpeg">
-                    <img class="hero-img" src=".//main/tab-webp/img-track-tab-1x.webp" alt="">
+                <picture class="hero-picture">
+                    <source media="(max-width:375px)" srcset="./main/mb-webp/img-video-mb-1x.webp 1x, ./main/mb-webp/img-video-mb-2x.webp 2x, ./main/mb-webp/img-video-mb-3x.webp 3x" type="image/webp">
+                    <source media="(max-width:375px)" srcset="./main/mb/img-video-mb-1x.jpg 1x, ./main/mb/img-video-mb-2x.jpg 2x, ./main/mb/img-video-mb-3x.jpg 3x" type="image/jpeg">
+                    <img class="hero-img" src="./main/mb/img-video-mb-1x.jpg" alt="">
                 </picture>
 
-                    <div class="hero-wrapper">
-                            <picture class="hero-picture">
-                            <source media="(max-width:375px)" srcset="./main/mb-webp/img-video-mb-1x.webp 1x, ./main/mb-webp/img-video-mb-2x.webp 2x, ./main/mb-webp/img-video-mb-3x.webp 3x" type="image/webp">
-                            <source media="(max-width:375px)" srcset="./main/mb/img-video-mb-1x.jpg 1x, ./main/mb/img-video-mb-2x.jpg 2x, ./main/mb/img-video-mb-3x.jpg 3x" type="image/jpeg">
-                            <img class="hero-img" src="./main/mb/img-video-mb-1x.jpg" alt="">
-                        </picture>
+                <div class="hero-wrapper">
+                    <picture class="hero-picture-tab">
+                        <source media="(max-width:375px)" srcset="./main/tab-webp/img-track-tab-1x-webp.webp 1x, ./main/tab-webp/img-track-tab-2x-webp.webp 2x, ./main/tab-webp/img-track-tab-3x-webp.webp 3x" type="image/webp">
+                        <source media="(max-width:375px)" srcset="./main/tab/img-track-tab-1x.jpg 1x, ./main/tab/img-track-tab-2x.jpg 2x, ./main/tab/img-track-tab-3x.jpg 3x" type="image/jpeg">
+                        <img class="hero-img" src=".//main/tab-webp/img-track-tab-1x-webp.webp" alt="">
+                    </picture>
 
                     <h1 class="hero-title hero-title-video">ALINA KOPYLOVA</h1>
                     <p class="hero-desc hero-desc-video">Я повернусь</p>
                 </div>
-            </div>
-        </section>
-        <section class="section-control">
-            <div class="container">
+                <div class="control-wrapper">
 
-                <input class="control-input" type="range">
+                    <button class="btn-control-tab">
+                        <svg class="svg-control" width="24" height="24">
+                            <use href="./symbol-defs.svg#play-circle"></use>
+                        </svg>
+                    </button>
 
-                <div class="control-container">
-                    <button class="btn-control">
-                        <svg class="svg-control" width="23" height="18">
-                            <use href="./symbol-defs.svg#past"></use>
+                    <input class="video-input" type="range">
+
+                    <button class="btn-video-tab">
+                        <svg class="svg-video" width="24" height="24">
+                            <use href="./symbol-defs.svg#volume"></use>
                         </svg>
                     </button>
-                    <button class="btn-control btn-control-stop">
-                        <svg class="svg-control" width="13" height="17">
-                            <use href="./symbol-defs.svg#stop"></use>
-                        </svg>
-                    </button>
-                    <button class="btn-control">
-                        <svg class="svg-control" width="23" height="18">
-                            <use href="./symbol-defs.svg#next"></use>
-                        </svg>
-                    </button>
+    
+                    <div class="video-container">
+                        <button class="btn-video">
+                            <svg class="svg-video" width="23" height="18">
+                                <use href="./symbol-defs.svg#past"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-video btn-video-stop">
+                            <svg class="svg-video" width="13" height="17">
+                                <use href="./symbol-defs.svg#stop"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-video">
+                            <svg class="svg-video" width="23" height="18">
+                                <use href="./symbol-defs.svg#next"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                    <a href="#" class="footer-link">
+                        <svg class="footer-svg" width="11" height="11">
+                            <use href="./symbol-defs.svg#subscribe"></use>
+                        </svg>
+                        <p class="footer-desc">Підписатися</p>
+                    </a>
+                    <a href="#" class="footer-link">
+                        <p class="footer-desc">Слухати</p>
+                        <svg class="footer-svg" width="12" height="12">
+                            <use href="./symbol-defs.svg#headphones"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="./burger.js"></script>
 </body>
 </html>

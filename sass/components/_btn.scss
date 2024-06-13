@@ -4,7 +4,7 @@
     background-color: inherit;
     color: $red;
     margin: 0 auto 8px auto;
-    @include positioning(flex, _ , center, center,_, _);
+
 
     &-about{
         background-color: $tomato;

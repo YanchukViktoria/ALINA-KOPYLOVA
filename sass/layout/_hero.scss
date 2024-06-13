@@ -307,3 +307,7 @@
 .hero-box{
     @include positioning(flex, column, _ ,_ , _, _);
 }
+
+.hero-link{
+    @include positioning(flex, _ , center, center,_, _);
+}

@@ -156,22 +156,6 @@ body {
   background-color: inherit;
   color: rgb(209, 22, 22);
   margin: 0 auto 8px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: _;
-          flex-direction: _;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: _;
-  -ms-flex-wrap: _;
-      flex-wrap: _;
 }
 .hero-btn-about {
   background-color: rgb(224, 112, 100);
@@ -1632,6 +1616,25 @@ body {
   -webkit-box-align: _;
       -ms-flex-align: _;
           align-items: _;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+}
+
+.hero-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: _;
   -ms-flex-wrap: _;
       flex-wrap: _;

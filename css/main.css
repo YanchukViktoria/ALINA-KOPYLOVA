@@ -1257,6 +1257,7 @@ body {
 @media screen and (min-width: 1440px) {
   .section-hero {
     padding: 393px 0 299px;
+    background-size: contain;
     background-position: center;
     background-image: url("../main/desc/bg-main-video-contact-desc-1x.jpg");
   }
@@ -1896,21 +1897,6 @@ body {
   border-color: inherit;
   color: rgb(209, 22, 22);
   outline-color: inherit;
-}
-.control-input[type=range]::-webkit-slider-runnable-track {
-  border: none;
-  outline: none;
-  border-color: inherit;
-  outline-color: inherit;
-}
-.control-input[type=range]::-webkit-slider-thumb {
-  border: none;
-  outline: none;
-  border-color: inherit;
-  outline-color: inherit;
-}
-.control-input[type=range]:focus {
-  outline: none;
 }
 @media screen and (min-width: 744px) {
   .control-input {

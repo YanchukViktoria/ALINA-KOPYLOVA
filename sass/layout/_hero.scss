@@ -167,6 +167,7 @@
         @include lh(32, 38);
         color: $blue;
         text-align: center;
+        margin-top: 30px;
 
         @include tab(744px){
             font-family: $rufina;
@@ -175,6 +176,7 @@
             @include lh(24, 30);
             color: $red;
             text-align: left;
+            margin: 0;
         }
     }
 

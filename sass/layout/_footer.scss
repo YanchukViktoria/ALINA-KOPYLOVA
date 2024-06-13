@@ -20,7 +20,7 @@
     }
 
     &-about{
-
+        position: static;
         box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
         
         @include tab(744px){

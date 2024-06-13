@@ -1,114 +1,95 @@
-.hero-container{
+.form{
     display: none;
     @include tab(744px){
         display: block;
+        max-width: 346px;
+        max-height: 459px;
+        padding: 81px 29px 30px 29px;
+        background: rgba(44, 44, 44, 0.7);
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
-        background-color: rgba(44, 44, 44, 0.7);
-        border-radius: 20px;
-        padding: 81px 28px 30px 28px;
-        max-width: 346px
+        border-radius: 22px;
+        @include positioning(flex, _, space-between, _, _, wrap);
     }
-}
 
-.hero-list{
-    @include positioning(flex, _, _, _, _, wrap);
-    margin-bottom: 15px;
-
-    &-item{
-        @include positioning(flex, column, _, _, _, _);
+    @include desc(1440px){
+        max-width: 411px;
+        max-height: 632px;
+        padding: 135px 33px 40px 33px;
     }
-}
-
-.hero-form{
-    @include positioning(flex, column, space-between, center, _, _);
-}
-
-.form-input{
-    max-width: 125px;
 }
 
 .form-label{
-    display: block;
+    @include positioning(flex, column, _, _, 9px, _);
+    flex-grow: 1;
+    max-width: 100px;
+
+    &-mail{
+        margin: 28px 0 15px 0;
+        max-width: 200px;
+        flex-grow: 2;
+
+        @include desc(1440px){
+            margin: 42px 0 43px 0;
+        }
+    }
+
+    &-area{
+        max-width: 200px;
+        flex-grow: 2;
+    }
+}
+
+.form-desc{
     font-family: $inter;
-    font-size: 16px;
     font-weight: 700;
+    font-size: 16px;
     @include lh(16, 19);
     color: $white;
-    margin-bottom: 9px;
 
-    &-teaxtarea{
+    &-area{
         margin-bottom: 19px;
     }
 }
 
-.hero-textarea{
-    min-width: 289px;
-    max-width: 289px;
-    min-height: 91px;
-    border-radius: 20px;
-    background-color: inherit;
-    border: 1px solid rgba(244, 91, 49, 0.35);
-    padding: 10px 13px;
-    resize: none;
-
-    font-family: $inter;
-    font-weight: 400;
-    font-size: 16px;
-    @include lh(16, 19);
-
-    &::placeholder{
-        color: $white;
-    }
-}
-
-.hero-label{
-    font-family: $inter;
-    font-size: 16px;
-    font-weight: 700;
-    @include lh(16, 19);
-    color: $white;
-    margin-bottom: 9px;
-
-    &:focus{
-        border: none;
-        outline: none;
-    }
-}
-
-.form-wrapper{
-    @include positioning(flex, column, _, _, 19px, _);
-    margin-bottom: 33px;
-}
-
-.hero-input{
-    max-width: 135px;
+.form-input{
     background-color: inherit;
     box-shadow: none;
     border: none;
-    border-bottom: 1px solid rgba(244, 91, 49, 0.35);
-    padding: 0;
-
-    &-mail{
-        max-width: 197px;
-    }
 
     &::placeholder{
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        @include lh(16, 19);
         color: $white;
     }
 }
 
-.footer-list{
-    @include positioning(flex, _, space-between, _, 28px 0, wrap);
-    margin-bottom: 15px;
+.form-textarea{
+    background-color: inherit;
+    border: 1px solid rgba(244, 91, 49, 0.35);
+    border-radius: 20px;
+    min-width: 289px;
+    max-width: 289px;
+    min-height: 91px;
+    max-height: 91px;
+    resize: none;
+    padding: 10px 13px;
+    margin-bottom: 32px;
 
-    &-item{
-        @include positioning(flex, column, _, _, _, _);
+    &::placeholder{
+        font-family: $inter;
+        font-weight: 400;
+        font-size: 16px;
+        @include lh(16, 19);
+        color: $white;
     }
-}
 
-.hero-input::placeholder{
-    font-family: $inter;
-    font-weight: 400;
-    font-size: 16px;
-    @include lh(16, 19);
+    @include desc(1440px){
+        max-width: 343px;
+        max-height: 135px;
+        min-width: 343px;
+        min-height: 135px;
+        padding: 15px;
+    }
 }

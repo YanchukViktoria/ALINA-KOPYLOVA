@@ -65,93 +65,76 @@
     </header>
     <main>
         <section class="section-hero section-hero-music">
-            <div class="container container-music-wrapper">
+            <div class="container">
                 <picture class="hero-picture">
                     <source media="(max-width:375px)" srcset="./main/mb-webp/img-music-mb-1x.webp 1x, ./main/mb-webp/img-music-mb-2x.webp 2x, ./main/mb-webp/img-music-mb-3x.webp 3x" type="image/webp">
                     <source media="(max-width:375px)" srcset="./main/mb/img-music-mb-1x.jpg 1x, ./main/mb/img-music-mb-2x.jpg 2x, ./main/mb/img-music-mb-3x.jpg 3x" type="image/jpeg">
                     <img class="hero-img" src="./main/mb/img-music-mb-1x.jpg" alt="">
                 </picture>
 
+
                 <h1 class="hero-title-music">ALINA KOPYLOVA</h1>
                 <p class="hero-desc-music">Я повернусь</p>
-
-                <div class="hero-music-container">
-                    <svg class="hero-music-svg" width="24" height="24">
+            </div>
+        </section>
+        <section class="section-control section-control-music">
+            <div class="container container-control">
+                <div class="control-input-container control-input-container-music">
+                    <svg class="contol-svg control-svg-tab" width="24" height="24">
                         <use href="./symbol-defs.svg#note"></use>
                     </svg>
-
-                    <div class="hero-music-box">
-                        <h2 class="hero-music-title">Я повернусь</h2>
-                        <p class="hero-music-desc">Alina  Kopylova</p>
+                    <div class="control-info-container">
+                        <h4 class="contol-title">Я повернусь</h4>
+                        <p class="control-desc">Alina Kopylova</p>
                     </div>
-
-                    <input class="music-input" type="range">
-
-                    <div class="music-container">
-                        <button class="btn-music">
-                            <svg class="svg-music" width="23" height="18">
-                                <use href="./symbol-defs.svg#past"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-music btn-music-stop">
-                            <svg class="svg-music" width="13" height="17">
-                                <use href="./symbol-defs.svg#stop"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-music">
-                            <svg class="svg-music" width="23" height="18">
-                                <use href="./symbol-defs.svg#next"></use>
-                            </svg>
-                        </button>
-                    </div>
-
-                    <button class="hero-music-btn">
-                        <svg class="hero-music-svg-like" width="14" height="14">
+                    <input class="control-input" type="range">
+                    <button class="control-btn control-btn-tab">
+                        <svg class="control-svg" width="14" height="14">
                             <use href="./symbol-defs.svg#save-like"></use>
                         </svg>
                     </button>
                 </div>
+                <ul class="control-list">
+                    <li class="control-list-item">
+                        <button class="control-btn">
+                            <svg class="control-svg" width="23" height="18">
+                                <use href="./symbol-defs.svg#past"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="control-list-item">
+                        <button class="control-btn control-btn-stop">
+                            <svg class="control-svg" width="13" height="17">
+                                <use href="./symbol-defs.svg#stop"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="control-list-item">
+                        <button class="control-btn">
+                            <svg class="control-svg" width="23" height="18">
+                                <use href="./symbol-defs.svg#next"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-video">
         <div class="container">
-            <div class="footer-container">
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="22" height="20">
-                            <use href="./symbol-defs.svg#home"></use>
-                        </svg>
-                        <a href="./index.html" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
-                    </li>
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="20" height="20">
-                            <use href="./symbol-defs.svg#search"></use>
-                        </svg>
-                        <a class="footer-menu-list-link">Search</a>
-                    </li>
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="26" height="23">
-                            <use href="./symbol-defs.svg#library"></use>
-                        </svg>
-                        <a class="footer-menu-list-link">Library</a>
-                    </li>
-                </ul>
-
-                <div class="footer-wrapper">
-                    <a href="#" class="footer-link">
-                        <svg class="footer-svg" width="11" height="11">
-                            <use href="./symbol-defs.svg#subscribe"></use>
-                        </svg>
-                        <p class="footer-desc">Підписатися</p>
-                    </a>
-                    <a href="#" class="footer-link">
-                        <p class="footer-desc">Слухати</p>
-                        <svg class="footer-svg" width="12" height="12">
-                            <use href="./symbol-defs.svg#headphones"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="footer-menu">
+                <button class="footer-menu-btn">
+                    <svg class="footer-svg" width="11" height="11">
+                        <use href="./symbol-defs.svg#subscribe"></use>
+                    </svg>
+                    Підписатися
+                </button>
+                <button class="footer-menu-btn">
+                    Слухати
+                    <svg class="footer-svg" width="12" height="12">
+                        <use href="./symbol-defs.svg#headphones"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>

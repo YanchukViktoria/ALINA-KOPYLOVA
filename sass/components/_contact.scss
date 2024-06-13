@@ -1,10 +1,10 @@
-.contact-svg{
+.address-svg{
     fill: currentColor;
     color: $white;
     @include positioning(flex, row, _, _, 8px, _);
 }
 
-.contact-list{
+.address-list{
     @include positioning(flex, column, _, _, 16px, _);
     margin-bottom: 16px;
 

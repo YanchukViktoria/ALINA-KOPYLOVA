@@ -1,0 +1,45 @@
+
+.track-title{
+    margin: 52px 0 11px 0;
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: 20px;
+    @include lh(20, 23);
+    color: $dark-blue;
+
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.track-img{
+    border-radius: 16px;
+}
+
+.track-container{
+    @include positioning(flex, _, _, _ , _, _);
+
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.track-info-container{
+    margin: 0 auto 0 9px;
+}
+
+.track-info-title{
+    font-family: $raleway;
+    font-weight: 500;
+    font-size: 16px;
+    @include lh(16, 19);
+    color: $red;
+}
+
+.track-info-desc{
+    font-family: $raleway;
+    font-weight: 500;
+    font-size: 16px;
+    @include lh(16, 19);
+    color: $blue;
+}

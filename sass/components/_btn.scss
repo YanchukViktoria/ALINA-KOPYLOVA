@@ -3,12 +3,13 @@
     padding: 0;
     background-color: inherit;
     color: $red;
-    margin: 0 auto;
+    margin: 0 auto 8px auto;
     @include positioning(flex, _ , center, center,_, _);
 
     &-about{
         background-color: $tomato;
-        border-radius: 8px;
+        color: $white;
+        border-radius: 15px;
         padding: 12px 30px;
         @include positioning(flex, _, center, center, 7px, _);
         color: $white;
@@ -17,6 +18,10 @@
         font-size: 14px;
         @include lh(14, 16);
         margin: 26px auto;
+
+        @include tab(744px){
+            display: none;
+        }
     }
 
     @include tab(744px){
@@ -74,7 +79,9 @@
 }
 
 .header-btn{
+    padding: 0;
     background-color: inherit;
+    @include positioning(flex, _, center, center, _, _);
     @include tab(744px){
         display: none;
     }
@@ -91,6 +98,10 @@
     font-weight: 700;
     @include lh(18, 23);
     text-align: center;
+
+    @include desc(1440px){
+        padding: 13px 0;
+    }
 }
 
 .hero-music-btn{
@@ -98,4 +109,67 @@
     padding: 5px;
     background-color: $red;
     border-radius: 50px;
+}
+
+.control-btn{
+    background-color: inherit;
+    color: $blue;
+    @include positioning(flex, _, center, center, _ ,_);
+
+    &-stop{
+        border: 1px solid $blue;
+        padding: 22px 21px;
+        border-radius: 50%;
+    }
+
+    @include tab(744px){
+        display: none;
+    }
+
+    &-tab{
+        display: none;
+
+        @include tab(744px){
+            color: $white;
+            background-color: $red;
+            @include positioning(flex, _, center, center, _, _);
+            padding: 5px;
+            border-radius: 50%;
+            margin-left: 22px;
+        }
+    }
+}
+
+.footer-btn{
+    padding: 0;
+    background-color: inherit;
+    color: $grey;
+    @include positioning(flex, column, center, center, 7px, _);
+
+    &-home{
+        color: $red;
+    }
+}
+
+.footer-menu-btn{
+    background-color: inherit;
+    padding: 0;
+    @include positioning(flex, _, _, center, 6px, _);   
+    color: $white;
+    font-family: $inter;
+    font-weight: 400;
+    font-size: 7px;
+    @include lh(7, 12);
+    letter-spacing: 3.44px;
+}
+
+.control-input-btn{
+    display: none;
+
+    @include tab(744px){
+        @include positioning(flex, _, center, center, _, _);
+        background-color: inherit;
+        color: $white;
+        padding: 0;
+    }
 }

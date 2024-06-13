@@ -79,63 +79,74 @@
                         <img class="hero-img" src=".//main/tab-webp/img-track-tab-1x-webp.webp" alt="">
                     </picture>
 
+                    <picture class="hero-picture-desc">
+                        <source media="(max-width:1440px)" srcset="./main/desc-webp/img-track-desc-1x.webp 1x, ./main/desc-webp/img-track-desc-2x.webp 2x, ./main/desc-webp/img-track-desc-3x.webp 3x" type="image/webp">
+                        <source media="(max-width:1440px)" srcset="./main/desc/img-track-desc-1x.jpg 1x, ./main/desc/img-track-desc-2x.jpg 2x, ./main/desc/img-track-desc-3x.jpg 3x" type="image/jpeg">
+                        <img class="hero-img" src=".//main/tab-webp/img-track-tab-1x-webp.webp" alt="">
+                    </picture>
+
                     <h1 class="hero-title hero-title-video">ALINA KOPYLOVA</h1>
                     <p class="hero-desc hero-desc-video">Я повернусь</p>
                 </div>
-                <div class="control-wrapper">
-
-                    <button class="btn-control-tab">
-                        <svg class="svg-control" width="24" height="24">
+            </div>
+        </section>
+        <section class="section-control">
+            <div class="container">
+                <div class="control-input-container">
+                    <button class="control-input-btn">
+                        <svg class="control-svg" width="20" height="20">
                             <use href="./symbol-defs.svg#play-circle"></use>
                         </svg>
                     </button>
-
-                    <input class="video-input" type="range">
-
-                    <button class="btn-video-tab">
-                        <svg class="svg-video" width="24" height="24">
+                    <input class="control-input" type="range">
+                    <button class="control-input-btn">
+                        <svg class="control-svg" width="24" height="24">
                             <use href="./symbol-defs.svg#volume"></use>
                         </svg>
                     </button>
-    
-                    <div class="video-container">
-                        <button class="btn-video">
-                            <svg class="svg-video" width="23" height="18">
+                </div>
+            </div>
+                <ul class="control-list">
+                    <li class="control-list-item">
+                        <button class="control-btn">
+                            <svg class="control-svg" width="23" height="18">
                                 <use href="./symbol-defs.svg#past"></use>
                             </svg>
                         </button>
-                        <button class="btn-video btn-video-stop">
-                            <svg class="svg-video" width="13" height="17">
+                    </li>
+                    <li class="control-list-item">
+                        <button class="control-btn control-btn-stop">
+                            <svg class="control-svg" width="13" height="17">
                                 <use href="./symbol-defs.svg#stop"></use>
                             </svg>
                         </button>
-                        <button class="btn-video">
-                            <svg class="svg-video" width="23" height="18">
+                    </li>
+                    <li class="control-list-item">
+                        <button class="control-btn">
+                            <svg class="control-svg" width="23" height="18">
                                 <use href="./symbol-defs.svg#next"></use>
                             </svg>
                         </button>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer-video">
         <div class="container">
-            <div class="footer-container">
-                <div class="footer-wrapper">
-                    <a href="#" class="footer-link">
-                        <svg class="footer-svg" width="11" height="11">
-                            <use href="./symbol-defs.svg#subscribe"></use>
-                        </svg>
-                        <p class="footer-desc">Підписатися</p>
-                    </a>
-                    <a href="#" class="footer-link">
-                        <p class="footer-desc">Слухати</p>
-                        <svg class="footer-svg" width="12" height="12">
-                            <use href="./symbol-defs.svg#headphones"></use>
-                        </svg>
-                    </a>
-                </div>
+            <div class="footer-menu">
+                <button class="footer-menu-btn">
+                    <svg class="footer-svg" width="11" height="11">
+                        <use href="./symbol-defs.svg#subscribe"></use>
+                    </svg>
+                    Підписатися
+                </button>
+                <button class="footer-menu-btn">
+                    Слухати
+                    <svg class="footer-svg" width="12" height="12">
+                        <use href="./symbol-defs.svg#headphones"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>

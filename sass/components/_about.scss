@@ -1,0 +1,19 @@
+.pictures-container{
+    display: none;
+
+    @include tab(744px){
+        @include positioning(flex, _, _ ,_ , 10px 14px, wrap);
+        margin-top: 30px;
+    }
+
+    @include desc(1440px){
+        max-width: 634px;
+        margin-top: 20px;
+        gap: 20px 17px;
+    }
+}
+
+.about-img{
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+}

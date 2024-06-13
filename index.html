@@ -68,46 +68,50 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-container">
-                <ul class="footer-menu-list">
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="23" height="20">
-                            <use href="./symbol-defs.svg#home"></use>
-                        </svg>
-                        <a href="./index.html" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
+            <div class="footer-mob-menu">
+                <ul class="footer-mb-menu-list">
+                    <li class="footer-mb-menu-list-item">
+                        <button class="footer-btn footer-btn-home">
+                            <svg class="footer-svg" width="23" height="20">
+                                <use href="./symbol-defs.svg#home"></use>
+                            </svg>
+                            <a href="./index.html" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
+                        </button>
                     </li>
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="20" height="20">
-                            <use href="./symbol-defs.svg#search"></use>
-                        </svg>
-                        <a class="footer-menu-list-link">Search</a>
+                    <li class="footer-mb-menu-list-item">
+                        <button class="footer-btn">
+                            <svg class="footer-svg" width="20" height="20">
+                                <use href="./symbol-defs.svg#search"></use>
+                            </svg>
+                            <a class="footer-menu-list-link">Search</a>
+                        </button>
                     </li>
-                    <li class="footer-menu-list-item">
-                        <svg class="footer-menu-list-svg" width="26" height="23">
-                            <use href="./symbol-defs.svg#library"></use>
-                        </svg>
-                        <a class="footer-menu-list-link">Library</a>
+                    <li class="footer-mb-menu-list-item">
+                        <button class="footer-btn">
+                            <svg class="footer-svg" width="20" height="20">
+                                <use href="./symbol-defs.svg#library"></use>
+                            </svg>
+                            <a class="footer-menu-list-link">Search</a>
+                        </button>
                     </li>
                 </ul>
-
-                <div class="footer-wrapper">
-                    <a href="#" class="footer-link">
-                        <svg class="footer-svg" width="11" height="11">
-                            <use href="./symbol-defs.svg#subscribe"></use>
-                        </svg>
-                        <p class="footer-desc">Підписатися</p>
-                    </a>
-                    <a href="#" class="footer-link">
-                        <p class="footer-desc">Слухати</p>
-                        <svg class="footer-svg" width="12" height="12">
-                            <use href="./symbol-defs.svg#headphones"></use>
-                        </svg>
-                    </a>
-                </div>
+            </div>
+            <div class="footer-menu">
+                <button class="footer-menu-btn">
+                    <svg class="footer-svg" width="11" height="11">
+                        <use href="./symbol-defs.svg#subscribe"></use>
+                    </svg>
+                    Підписатися
+                </button>
+                <button class="footer-menu-btn">
+                    Слухати
+                    <svg class="footer-svg" width="12" height="12">
+                        <use href="./symbol-defs.svg#headphones"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </footer>
-
     <script src="./burger.js"></script>
 </body>
 </html>

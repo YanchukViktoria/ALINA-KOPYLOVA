@@ -1,49 +1,100 @@
 .section-hero{
     @include bg-image("../main/mb-webp/bg-main-mb-1x.webp", "../main/mb/bg-main-mb-1x.jpg");
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: $rufina;
     padding: 292px 0 308px 0;
 
     @include tab(744px){
-        padding: 241px 0 219px 0;
+        padding: 241px 0 221px 0;
         background-size: contain;
+        background-position: center;
         @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
     }
 
-    &-about{
-        padding: 98px 0 52px 0;
-        background: none;
-        @include tab(74px){
-            box-shadow: none;
-        }
+    @include desc(1440px){
+        padding: 393px 0 299px;
+        background-size: contain;
+        background-position: center;
+        @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
     }
 
-    &-video{
-        padding: 108px 0 19px 0;
-        background-image: none;
+    &-about{
+        padding: 98px 0 46px 0;
+        background: none;
+
         @include tab(744px){
+            padding: 79px 0 30px 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            // background-size: contain;
+
+            @include bg-image("../main/tab-webp/bg-about-tab-1x.webp", "../main/tab/bg-about-tab-1x.jpg");
+        }
+
+        @include desc(1440px){
+            padding: 135px 0 92px 0;
+            height: 100vh;
+
+
+            @include bg-image("../main/desc-webp/bg-about-desc-1x.webp", "../main/desc/bg-about-desc-1x.jpg");
+        }
+    }
+    &-video{
+        padding: 107px 0 0 0;
+        background-image: none;
+
+        @include tab(744px){
+            background-position: center;
+            background-color: black;
             @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
             background-size: contain;
-            padding: 74px 0 76px 0;
+            padding: 78px 0 138px 0;
+        }
+
+        @include desc(1440px){
+            background-position: center;
+            background-color: black;
+            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
+            padding: 104px 0 0 0;
+            height: 100vh;
         }
     }
 
     &-music{
-        padding: 108px 0 19px 0;
+        padding: 108px 0 0 0;
         background-image: none;
 
         @include tab(744px){
             padding: 88px 0 70px 0;
             height: 100vh;
+            background-position: center;
+            background-color: black;
             @include bg-image("../main/tab-webp/bg-music-tab-1x.webp", "../main/tab/bg-music-tab-1x.jpg");
+        }
+
+        @include desc(1440px){
+            padding: 107px 0 0 0;
+            background-position: center;
+            background-color: black;
+            @include bg-image("../main/desc-webp/bg-music-desc-1x.webp", "../main/desc/bg-music-desc-1x.jpg");
         }
     }
 
     &-contact{
-        padding: 50px 0 340px 0;
+        padding: 130px 0 311px 0;
+
         @include tab(744px){
-            padding: 80px 0 98px 0;
+            height: 100vh;
+            padding: 80px 0 0px 0;
+        }
+
+        @include desc(1440px){
+            padding: 118px 0 130px 0;
+            background-position: center;
+            background-color: black;
+            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
         }
     }
 }
@@ -55,9 +106,16 @@
     font-weight: 700;
     text-align: center;
     color: $red;
+    font-family: $rufina;
 
     @include tab(744px){
         margin-bottom: 49px;
+    }
+
+    @include desc(1440px){
+        font-size: 30px;
+        @include lh(30, 37);
+        margin-bottom: 79px;
     }
 
     &-about{
@@ -67,6 +125,16 @@
         font-size: 24px;
         @include lh(24, 30);
         margin: 22px 0 26px;
+
+        @include tab(744px){
+            margin-bottom: 12px;
+        }
+
+        @include desc(1440px){
+            font-size: 30px;
+            @include lh(30, 38);
+            margin: 0 0 17px 0;
+        }
     }
 
     &-video{
@@ -76,6 +144,7 @@
         @include lh(32, 38);
         color: $blue;
         margin: 30px auto 0 auto;
+
         @include tab(744px){
             text-align: left;
             margin: 0 0 24px 0;
@@ -84,6 +153,28 @@
             color: $red;
             @include lh(24, 30);
             font-family: $rufina;
+        }
+
+        @include desc(1440px){
+            margin-bottom: 54px;
+        }
+    }
+
+    &-music{
+        font-family: $raleway;
+        font-weight: 700;
+        font-size: 32px;
+        @include lh(32, 38);
+        color: $blue;
+        text-align: center;
+
+        @include tab(744px){
+            font-family: $rufina;
+            font-weight: 700;
+            font-size: 24px;
+            @include lh(24, 30);
+            color: $red;
+            text-align: left;
         }
     }
 
@@ -98,12 +189,17 @@
             max-width: 181px;
             margin-bottom: 0;
         }
+
+        @include desc(1440px){
+            max-width: none;
+            margin-bottom: 111px;
+        }
     }
 }
 
 .hero-desc{
     display: block;
-    font-family: 'lexend';
+    font-family: lexend;
     font-size: 16px;
     @include lh(16, 20);
     font-weight: 400;
@@ -116,7 +212,15 @@
         font-weight: 400;
         font-size: 14px;
         @include lh(14, 17);
-        margin-bottom: 20px;
+
+        @include tab(744px){
+            color: $white;
+            max-width: 449px;
+        }
+
+        @include desc(1440px){
+            max-width: 839px;
+        }
     }
     
     &-video{
@@ -124,8 +228,22 @@
         font-size: 18px;
         font-weight: 400;
         @include lh(18, 21);
-        color: $red;
-        margin: 0 auto 30px auto;
+        color: $tomato;
+        margin: 0 auto;
+
+        @include tab(744px){
+            display: none;
+        }
+    }
+
+    &-music{
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 18px;
+        @include lh(18, 21);
+        color: $tomato;
+        text-align: center;
+
         @include tab(744px){
             display: none;
         }
@@ -137,28 +255,45 @@
 }
 
 .hero-img{
-    margin: 0 auto 30px auto;
     border-radius: 24px;
 
     @include tab(744px){
         border-radius: 0;
-        margin-bottom: 38px;
+        height: 343px;
+        margin: 0 auto;
+    }
+
+    @include desc(1440px){
+        height: 458px;
     }
 }
 
 .hero-picture{
-    display: block;
+    @include positioning(flex, _, center, center, _, _);
+
+    &-tab{
+        display: none;
+        @include tab(744px){
+            display: block;
+        }
+
+        @include desc(1440px){
+            display: none;
+        }
+    }
+
+    &-desc{
+        display: none;
+        @include desc(1440px){
+            display: block;
+        }
+    }
+
     @include tab(744px){
         display: none;
     }
 }
 
-.hero-picture-tab{
-    display: none;
-    @include tab(744px){
-        display: block;
-    }
-}
 
 .hero-wrapper{
     @include tab(744px){

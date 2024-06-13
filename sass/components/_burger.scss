@@ -4,6 +4,7 @@
     background-color: inherit;
     color: tomato;
     margin-left: auto;
+    @include positioning(flex, _, center, center, _, _);
 
     &-about{
         color: $dark-blue;
@@ -67,5 +68,19 @@
 
     &:focus-within{
         color: $red;
+    }
+}
+
+    //birger nav list
+
+.nav-menu-list{
+    @include positioning(flex, column, _, _, 12px, _);
+    font-family: $inter;
+
+    &-link{
+        font-size: 16px;
+        @include lh(16, 19);
+        font-weight: 600;   
+        color: $dark-blue;
     }
 }

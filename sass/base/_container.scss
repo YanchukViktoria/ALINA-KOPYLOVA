@@ -4,12 +4,12 @@
 
     @include tab(768px){
         width: 744px;
-        // padding: 0 18px 0 18px;
+        padding: 0 16px;
     }
 
     @include desc(1200px){
         width: 1440px;
-        // padding: 0 82px 0 82px;
+        padding: 0 80px;
     }
 
     &-hero-wrapp{
@@ -24,5 +24,21 @@
     &-music-wrapper{
         height: 100%;
         @include positioning(flex, column, space-between, _, _, _);
+    }
+
+    &-control{
+        @include tab(744px){
+            display: flex;
+        }
+    }
+
+    &-contact{
+        @include tab(744px){
+            @include positioning(flex, _, center, center, 85px, _);
+        }
+
+        @include desc(1440px){
+            @include positioning(flex, _, center, flex-start, 226px, _);
+        }
     }
 }

@@ -1,40 +1,49 @@
 .footer{
     position: absolute;
-    bottom: 18px;
+    bottom: 0;
     width: 100%;
     padding: 18px 0;
 
-    &-about{
-        position: static;
-        box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
-        padding: 12px 0 14px 0;
-        background-color: $white;
+    &-contact{
+        padding: 14px 0;
         @include tab(744px){
-            background: inherit;
-            box-shadow: none;
-            padding: 29px;
+            padding: 28px 0;
         }
     }
 
-    @include tab(744px){
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        padding: 30px 0;
+    &-video{
+        padding: 29px 0;
     }
+
+    @include desc(1440px){
+        padding: 29px 0;
+    }
+
+    &-about{
+
+        box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
+        
+        @include tab(744px){
+            // padding: 0;
+            // position: relative;
+            // box-shadow: none;
+            position: static;
+        }
+
+        @include desc(1440px){
+            // padding: 0;
+        }
+    }
+
 }
 
-.footer-menu-list{
+.footer-mb-menu-list{
     @include positioning(flex, _, center, center, 55px, _);
 
 
     &-item{
         color: $grey;
         @include positioning(flex, column, center, center, 7px, _);
-
-        &:first-child{
-            color: $red;
-        }
     }
 
     &-link{
@@ -42,7 +51,7 @@
         font-weight: 400;
         font-size: 12px;
         @include lh(12, 14);
-        color: $white;
+        color: $grey;
 
         &-first{
             color: $red;
@@ -51,23 +60,19 @@
         &-about{
             color: $grey;
         }
+
+        &-contact{
+            color: $dark-blue;
+        }
     }
 
     &-svg{
         fill: currentColor;
         margin-bottom: 2px;
     }
-
+    
     @include tab(744px){
         display: none;
-    }
-}
-
-.footer-wrapper{
-    display: none;
-    @include tab(744px){
-        display: block;
-        @include positioning(flex, _, space-between, _, _, _);
     }
 }
 
@@ -86,4 +91,33 @@
 
 .footer-svg{
     fill: currentColor;
+}
+
+.footer-mob-menu{
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.footer-menu{
+    display: none;
+    @include tab(744px){
+        display: block;
+        @include positioning(flex, _, space-between, center, _, _);
+    }
+
+
+    &-about{
+        @include tab(744px){
+            // position: absolute;
+            // bottom: 29px;
+            // width: 100%;
+            // max-width: 713px;
+        }
+
+        @include desc(1440px){
+            bottom: 28px;
+            max-width: 1280px;
+        }
+    }
 }

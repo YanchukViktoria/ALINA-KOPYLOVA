@@ -154,7 +154,6 @@
 .footer-menu-btn{
     background-color: inherit;
     padding: 0;
-    @include positioning(flex, _, _, center, 6px, _);   
     color: $white;
     font-family: $inter;
     font-weight: 400;

@@ -1,3 +1,21 @@
 body{
     margin: 0 auto;
+    height: 100%;
+
+    &-home{
+        background-color: #090A0E;
+    }
+
+    @include tab(744px){
+        background-color: #090A0E;
+    }
+}
+
+html{
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }

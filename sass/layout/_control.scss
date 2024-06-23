@@ -22,6 +22,7 @@
 .control-input{
     width: 100%;
     position: relative;
+    flex: 0.8;
 
     &::before{
         position: absolute;

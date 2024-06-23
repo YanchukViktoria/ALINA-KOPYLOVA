@@ -1,79 +1,48 @@
 .footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 18px 0;
+    @include positioning(flex, _, center, center, _, _);
 
-    &-contact{
-        padding: 14px 0;
+    &-main{
+        background-color: #07080D;
+    }
+
+    &-mob-menu{
+        @include positioning(flex, _, center, center, _, _);
         @include tab(744px){
-            padding: 28px 0;
+            display: none;
         }
     }
 
-    &-video{
-        padding: 29px 0;
-    }
+    // &-contact{
+    //     padding: 14px 0;
+    //     @include tab(744px){
+    //         padding: 28px 0;
+    //     }
+    // }
 
-    @include desc(1440px){
-        padding: 29px 0;
-    }
+    // &-video{
+    //     padding: 29px 0;
+    // }
 
-    &-about{
-        position: static;
-        box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
+    // @include desc(1440px){
+    //     // padding: 29px 0;
+    // }
+
+    // &-about{
+    //     position: static;
+    //     box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
         
-        @include tab(744px){
-            // padding: 0;
-            // position: relative;
-            // box-shadow: none;
-            position: static;
-        }
+    //     @include tab(744px){
+    //         // padding: 0;
+    //         // position: relative;
+    //         // box-shadow: none;
+    //         position: static;
+    //     }
 
-        @include desc(1440px){
-            // padding: 0;
-        }
-    }
+    //     @include desc(1440px){
+    //         // padding: 0;
+    //     }
+    // }
 
-}
-
-.footer-mb-menu-list{
-    @include positioning(flex, _, center, center, 55px, _);
-
-
-    &-item{
-        color: $grey;
-        @include positioning(flex, column, center, center, 7px, _);
-    }
-
-    &-link{
-        font-family: $raleway;
-        font-weight: 400;
-        font-size: 12px;
-        @include lh(12, 14);
-        color: $grey;
-
-        &-first{
-            color: $red;
-        }
-
-        &-about{
-            color: $grey;
-        }
-
-        &-contact{
-            color: $dark-blue;
-        }
-    }
-
-    &-svg{
-        fill: currentColor;
-        margin-bottom: 2px;
-    }
-    
-    @include tab(744px){
-        display: none;
-    }
 }
 
 .footer-link{
@@ -93,31 +62,22 @@
     fill: currentColor;
 }
 
-.footer-mob-menu{
-    @include tab(744px){
-        display: none;
-    }
-}
-
 .footer-menu{
     display: none;
     @include tab(744px){
-        display: block;
+        width: 100%;
         @include positioning(flex, _, space-between, center, _, _);
     }
 
 
-    &-about{
-        @include tab(744px){
-            // position: absolute;
-            // bottom: 29px;
-            // width: 100%;
-            // max-width: 713px;
-        }
+    // &-about{
+    //     @include tab(744px){
 
-        @include desc(1440px){
-            bottom: 28px;
-            max-width: 1280px;
-        }
-    }
+    //     }
+
+    //     @include desc(1440px){
+    //         bottom: 28px;
+    //         max-width: 1280px;
+    //     }
+    // }
 }

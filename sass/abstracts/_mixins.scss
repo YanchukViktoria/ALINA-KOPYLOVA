@@ -3,6 +3,9 @@
     line-height: $lhe;
 }
 
+    //adaptive
+
+
 @mixin tab($breakpoint){
     @media screen and (min-width: $breakpoint){
         @content;
@@ -15,12 +18,16 @@
     }
 }
 
+    //bg
+
 @mixin bg-image($webp, $fallback){
     @supports (background-image: url("#{$webp}")){
         background-image: url("#{$webp}");
     }
     background-image: url("#{$fallback}");
 }
+
+    //positioning
 
 @mixin positioning($disp, $fd, $jc, $al, $gp, $wr){
     display: $disp;
@@ -30,3 +37,14 @@
     gap: $gp;
     flex-wrap: $wr;
 } 
+
+    //retina
+
+    @mixin retina($dev-ratio, $dpi, $dppx){
+        @media (min-device-pixel-ratio:$dev-ratio),
+        (min-resolution:$dpi),
+        (min-resolution:$dppx)
+        {
+            @content;
+        }
+    }

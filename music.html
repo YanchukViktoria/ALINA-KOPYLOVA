@@ -14,134 +14,132 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header header-music">
-        <div class="container">
-            <div class="header-wrap">
-                <button class="header-btn">
-                    <svg class="header-svg" width="21" height="14">
-                        <use href="./symbol-defs.svg#arrow"></use>
-                    </svg>
-                </button>
-
-                <h2 class="header-title">Now playing</h2>
-
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-list-item"><a href="./about.html" class="nav-list-link">About</a></li>
-                        <li class="nav-list-item"><a href="./music.html" class="nav-list-link">Music</a></li>
-                        <li class="nav-list-item"><a href="./video.html" class="nav-list-link">Video</a></li>
-                        <li class="nav-list-item"><a href="./contacts.html" class="nav-list-link">Contact</a></li>
-                    </ul>
-                </nav>
-    
-                <button class="burger-btn burger-btn-about menu-open-btn">
-                    <svg class="burger-svg" width="21" height="15">
-                        <use href="./symbol-defs.svg#burger"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="mob-menu is-hidden">
-            <div class="container mob-menu-container">
-                <div class="mob-menu-top">
-                    <button class="menu-btn menu-close-btn" type="button">
-                        <svg class="menu-svg" width="10" height="10">
-                            <use href="./symbol-defs.svg#close"></use>
-                        </svg>
-                    </button>
-
-                        <nav class="nav-menu">
-                            <ul class="nav-menu-list">
-                                <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
-                                <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
-                                <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
-                                <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
-                                <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">home</a></li>
-                            </ul>
-                        </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="section-hero section-hero-music">
+    <div class="wrapper">
+        <header class="header header-music">
             <div class="container">
-                <picture class="hero-picture">
-                    <source media="(max-width:375px)" srcset="./main/mb-webp/img-music-mb-1x.webp 1x, ./main/mb-webp/img-music-mb-2x.webp 2x, ./main/mb-webp/img-music-mb-3x.webp 3x" type="image/webp">
-                    <source media="(max-width:375px)" srcset="./main/mb/img-music-mb-1x.jpg 1x, ./main/mb/img-music-mb-2x.jpg 2x, ./main/mb/img-music-mb-3x.jpg 3x" type="image/jpeg">
-                    <img class="hero-img" src="./main/mb/img-music-mb-1x.jpg" alt="">
-                </picture>
-
-
-                <h1 class="hero-title-music">ALINA KOPYLOVA</h1>
-                <p class="hero-desc-music">Я повернусь</p>
-            </div>
-        </section>
-        <section class="section-control section-control-music">
-            <div class="container container-control">
-                <div class="control-input-container control-input-container-music">
-                    <svg class="contol-svg control-svg-tab" width="24" height="24">
-                        <use href="./symbol-defs.svg#note"></use>
-                    </svg>
-                    <div class="control-info-container">
-                        <h4 class="contol-title">Я повернусь</h4>
-                        <p class="control-desc">Alina Kopylova</p>
-                    </div>
-                    <input class="control-input" type="range">
-                    <button class="control-btn control-btn-tab">
-                        <svg class="control-svg" width="14" height="14">
-                            <use href="./symbol-defs.svg#save-like"></use>
+                <div class="header-wrap">
+    
+                    <h2 class="header-title">Now playing</h2>
+    
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-list-item"><a href="./about.html" class="nav-list-link">About</a></li>
+                            <li class="nav-list-item"><a href="./music.html" class="nav-list-link">Music</a></li>
+                            <li class="nav-list-item"><a href="./video.html" class="nav-list-link">Video</a></li>
+                            <li class="nav-list-item"><a href="./contacts.html" class="nav-list-link">Contact</a></li>
+                            <li class="nav-menu-list-item"><a href="./index.html" class="nav-list-link">Home</a></li>
+                        </ul>
+                    </nav>
+        
+                    <button class="burger-btn burger-btn-about menu-open-btn">
+                        <svg class="burger-svg" width="21" height="15">
+                            <use href="./symbol-defs.svg#burger"></use>
                         </svg>
                     </button>
                 </div>
-                <ul class="control-list">
-                    <li class="control-list-item">
-                        <button class="control-btn">
-                            <svg class="control-svg" width="23" height="18">
-                                <use href="./symbol-defs.svg#past"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="control-list-item">
-                        <button class="control-btn control-btn-stop">
-                            <svg class="control-svg" width="13" height="17">
-                                <use href="./symbol-defs.svg#stop"></use>
-                            </svg>
-                        </button>
-                    </li>
-                    <li class="control-list-item">
-                        <button class="control-btn">
-                            <svg class="control-svg" width="23" height="18">
-                                <use href="./symbol-defs.svg#next"></use>
-                            </svg>
-                        </button>
-                    </li>
-                </ul>
             </div>
-        </section>
-    </main>
-    <footer class="footer footer-video">
-        <div class="container">
-            <div class="footer-menu">
-                <button class="footer-menu-btn">
-                    <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="foolet-link">
-                        <svg class="footer-svg" width="11" height="11">
-                            <use href="./symbol-defs.svg#subscribe"></use>
-                        </svg>
-                        Підписатися
-                    </a>
-                </button>
-                <button class="footer-menu-btn">
-                    <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="footer-link">
-                        Слухати
-                        <svg class="footer-svg" width="12" height="12">
-                            <use href="./symbol-defs.svg#headphones"></use>
-                        </svg>
-                    </a>
-                </button>
+            <div class="mob-menu is-hidden">
+                <div class="container mob-menu-container">
+                    <div class="mob-menu-top">
+                        <button class="menu-btn menu-close-btn" type="button">
+                            <svg class="menu-svg" width="10" height="10">
+                                <use href="./symbol-defs.svg#close"></use>
+                            </svg>
+                        </button>
+    
+                            <nav class="nav-menu">
+                                <ul class="nav-menu-list">
+                                    <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
+                                    <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
+                                    <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
+                                    <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
+                                    <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">Home</a></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </header>
+        <main>
+            <section class="section-hero section-hero-music">
+                <div class="container">
+                    <picture class="hero-picture">
+                        <source media="(max-width:600px)" srcset="./main/mb-webp/img-music-mb-1x.webp 1x, ./main/mb-webp/img-music-mb-2x.webp 2x, ./main/mb-webp/img-music-mb-3x.webp 3x" type="image/webp">
+                        <source media="(max-width:600px)" srcset="./main/mb/img-music-mb-1x.jpg 1x, ./main/mb/img-music-mb-2x.jpg 2x, ./main/mb/img-music-mb-3x.jpg 3x" type="image/jpeg">
+                        <img class="hero-img" src="./main/mb/img-music-mb-1x.jpg" alt="">
+                    </picture>
+    
+    
+                    <h1 class="hero-title-music">ALINA KOPYLOVA</h1>
+                    <p class="hero-desc-music">Я повернусь</p>
+                </div>
+            </section>
+            <section class="section-control section-control-music">
+                <div class="container container-control">
+                    <div class="control-input-container control-input-container-music">
+                        <svg class="contol-svg control-svg-tab" width="24" height="24">
+                            <use href="./symbol-defs.svg#note"></use>
+                        </svg>
+                        <div class="control-info-container">
+                            <h4 class="contol-title">Я повернусь</h4>
+                            <p class="control-desc">Alina Kopylova</p>
+                        </div>
+                        <input class="control-input" type="range">
+                        <button class="control-btn control-btn-tab">
+                            <svg class="control-svg" width="14" height="14">
+                                <use href="./symbol-defs.svg#save-like"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="control-list">
+                        <li class="control-list-item">
+                            <button class="control-btn">
+                                <svg class="control-svg" width="23" height="18">
+                                    <use href="./symbol-defs.svg#past"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="control-list-item">
+                            <button class="control-btn control-btn-stop">
+                                <svg class="control-svg" width="13" height="17">
+                                    <use href="./symbol-defs.svg#stop"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="control-list-item">
+                            <button class="control-btn">
+                                <svg class="control-svg" width="23" height="18">
+                                    <use href="./symbol-defs.svg#next"></use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer footer-video">
+            <div class="container container-footer container-footer-music">
+                <div class="footer-menu">
+                    <button class="footer-menu-btn">
+                        <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="foolet-link">
+                            <svg class="footer-svg" width="11" height="11">
+                                <use href="./symbol-defs.svg#subscribe"></use>
+                            </svg>
+                            Підписатися
+                        </a>
+                    </button>
+                    <button class="footer-menu-btn">
+                        <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="footer-link">
+                            Слухати
+                            <svg class="footer-svg" width="12" height="12">
+                                <use href="./symbol-defs.svg#headphones"></use>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="./burger.js"></script>
 </body>
 </html>

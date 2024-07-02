@@ -23,5 +23,25 @@
 }
 
 .social-list{
-    @include positioning(flex, _, _, _, 9px, _);
+    @include positioning(flex, _, _, center, 9px, _);
+}
+
+/* hover list in footer btns */
+
+
+.social-hidden-list{
+    position: absolute;
+    top: 12px;
+    @include positioning(flex, _, _, _, 10px, _);
+    opacity: 0;
+    margin-top: 15px;
+
+    // &:hover{
+
+    // }
+
+
+    &-link{
+        color: $white;
+    }
 }

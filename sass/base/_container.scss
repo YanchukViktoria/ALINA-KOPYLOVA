@@ -1,14 +1,14 @@
 .container{
-    width: 100%;
+    width: 341px;
     padding: 0 20px 0 20px;
     margin: 0 auto;
 
-    @include tab(448px){
-        width: 744px;
+    @include tab(744px){
+        width: 712px;
         padding: 0 16px;
     }
 
-    @include desc(1200px){
+    @include desc(1440px){
         width: 1280px;
         padding: 0 80px;
     }
@@ -46,14 +46,15 @@
 
     &-footer{
         @include positioning(flex, _, center, _, _, _);
-        padding: 13px;
-        box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
+        padding: 20px;
+        width: 100%;
 
-        &-video, &-music{
-            box-shadow: none;
+        &-about{
+            box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
         }
 
         @include tab(744px){
+            padding: 30px;
             position: absolute;
             box-shadow: none;
             bottom: 0;

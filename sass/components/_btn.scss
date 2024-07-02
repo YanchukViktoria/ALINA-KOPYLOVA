@@ -155,11 +155,7 @@
     background-color: inherit;
     padding: 0;
     color: $white;
-    font-family: $inter;
-    font-weight: 400;
-    font-size: 7px;
-    @include lh(7, 12);
-    letter-spacing: 3.44px;
+    @include positioning(flex, _, _, center, 17px, _);
 }
 
 .control-input-btn{

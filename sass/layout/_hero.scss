@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: $rufina;
-    padding: 292px 0 308px 0;
+    padding: 292px 0 237px 0;
 
     @include retina(2, 192dpi, 2dppx){
         @include bg-image("../main/mb-webp/bg-main-mb-2x.webp", "../main/mb/bg-main-mb-2x.jpg");
@@ -84,7 +84,7 @@
         }
     }
     &-video{
-        padding: 107px 0 0 0;
+        padding: 29px 0 0 0;
         background-image: none;
 
         @include tab(744px){
@@ -121,7 +121,7 @@
     }
 
     &-music{
-        padding: 108px 0 0 0;
+        padding: 29px 0 0 0;
         background-image: none;
 
         @include tab(744px){

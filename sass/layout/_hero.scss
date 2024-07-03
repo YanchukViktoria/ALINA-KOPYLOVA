@@ -93,7 +93,7 @@
             background-size: cover;
             @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
 
-                    @include retina(2, 192dpi, 2dppx){
+            @include retina(2, 192dpi, 2dppx){
                 @include bg-image("../main/tab-webp/bg-main-video-contact-tab-2x.webp", "../main/tab/bg-main-video-contact-tab-2x.jpg");
             }
 
@@ -315,7 +315,7 @@
         font-weight: 400;
         @include lh(18, 21);
         color: $tomato;
-        margin: 0 auto;
+        margin: 0 auto 75px auto;
 
         @include tab(744px){
             display: none;
@@ -346,11 +346,12 @@
     @include tab(744px){
         border-radius: 0;
         height: 343px;
-        margin: 0 auto;
+        margin: 0 auto 39px auto;
     }
 
     @include desc(1440px){
         height: 458px;
+        margin-bottom: 0 auto 52px auto;
     }
 }
 

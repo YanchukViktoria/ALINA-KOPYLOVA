@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -131,7 +131,7 @@
                                 <p class="track-info-desc">Я повернусь</p>
                             </div>
                             <button class="track-btn">
-                                <svg class="hero-svg" width="11" height="12">
+                                <svg class="hero-svg" width="14" height="14">
                                     <use href="./symbol-defs.svg#play"></use>
                                 </svg>
                             </button>
@@ -150,28 +150,84 @@
                     </button>
                 </div>
                 <div class="footer-menu">
-                    <button class="footer-menu-btn">
-                        <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="footer-link">
-                            <svg class="footer-svg" width="11" height="11">
+                    <div class="footer-anim-container">
+                        <button class="footer-menu-btn">
+                            <svg class="footer-svg footer-svg-anim" width="11" height="11">
                                 <use href="./symbol-defs.svg#subscribe"></use>
                             </svg>
-                            Підписатися
-                        </a>
-                    </button>
-                    <button class="footer-menu-btn">
-                        <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" target="_blank" class="footer-link">
-                            Слухати
-                            <svg class="footer-svg" width="12" height="12">
+                            <p class="footer-menu-desc">Підписатися</p>
+                        </button>
+                        <ul class="social-hidden-list">
+                            <li class="social-hidden-item">
+                                <a href="https://www.youtube.com/watch?v=QAZkqmpBEQA" class="social-hidden-list-link">
+                                    <svg width="15" height="15" class="footer-svg">
+                                        <use href="./symbol-defs.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-hiden-item">
+                                <a href="https://www.instagram.com/dr.alina_kopylova/?igsh=bWo5aW41Mm0wZ2t0" class="social-hidden-list-link">
+                                    <svg width="15" height="15" class="footer-svg">
+                                        <use href="./symbol-defs.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-hiden-item">
+                                <a href="https://www.tiktok.com/@dr.alina_kopylova" class="social-hidden-list-link">
+                                    <svg width="15" height="15" class="footer-svg">
+                                        <use href="./symbol-defs.svg#tiktok"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-anim-container">
+                        <button class="footer-menu-btn">
+                            <p class="footer-menu-desc-listen">Слухати</p>
+                            <svg class="footer-svg-anim" width="12" height="12">
                                 <use href="./symbol-defs.svg#headphones"></use>
                             </svg>
-                        </a>
-                    </button>
+                        </button>
+                        <ul class="social-hidden-list-listen">
+                            <li class="social-hidden-item">
+                                <a href="https://open.spotify.com/track/5mjqukvqnf20OhMY1T1zkx" class="social-hidden-list-link">
+                                    <svg width="18" height="18" class="footer-svg">
+                                        <use href="./symbol-defs.svg#spotify"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-hiden-item">
+                                <a href="https://music.apple.com/ua/album/%D1%8F-%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D0%BD%D1%83%D1%81%D1%8C-single/1725370376" class="social-hidden-list-link">
+                                    <svg width="15" height="15" class="footer-svg">
+                                        <use href="./symbol-defs.svg#applemusic"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-hiden-item">
+                                <a  href="https://music.youtube.com/watch?v=n_3TzigYvCM" class="social-hidden-list-link">
+                                    <svg width="16" height="16" class="footer-svg footer-svg-aaaa">
+                                        <use href="./symbol-defs.svg#youtubemusic"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-hiden-item">
+                                <a href="https://www.deezer.com/us/track/2617462672" class="social-hidden-list-link">
+                                    <svg width="20" height="25" class="footer-svg">
+                                        <use href="./symbol-defs.svg#deezer"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </footer>
     </div>
     <script src="./burger.js"></script>
-    <script src="./aos.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

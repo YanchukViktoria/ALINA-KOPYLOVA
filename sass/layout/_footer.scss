@@ -46,7 +46,7 @@
         @include positioning(flex, _, space-between, center, _, _);
     }
 
-    &-desc{
+    &-desc, &-desc-listen{
         color: $white;
         font-family: $inter;
         font-weight: 400;
@@ -58,29 +58,34 @@
 
 ///
 
+.footer-anim-container{
+    padding: 10px;
+}
+
 .footer-svg-anim{
     fill: currentColor;
 }
+  
+.social-hidden-list-hidden{
+  opacity: 1;
+  transition: all 0.3s linear 0.1s;
+}
 
-.social-hidden-list{
-    display: flex;
-    gap: 5px;
-    opacity: 0;
-  }
-  
-  .social-hidden-list-hidden{
-    position: absolute;
-    opacity: 1;
-    transform: translateY(10px);
-    transition: all 1s;
-  }
-  
-  .footer-menu-desc-hidden{
-    transition: all 1s;
-    transform: translateX(-10px);
-  }
-  
-  .footer-svg-anim-hidden{
-    opacity: 0;
-    transition: all 1s;
-  }
+.footer-menu-desc-hidden{
+  transition: all 0.3s;
+  transform: translate(-28px, -20px);
+}
+
+.footer-svg-anim-hidden{
+  opacity: 0;
+  transition: all 0.3s;
+}
+.footer-menu-desc-listen-hidden{
+  transition: all 0.3s;
+  transform: translate(40px, -20px);
+}
+
+
+.footer-svg-aaa{
+    fill: red($color: #000000);
+}

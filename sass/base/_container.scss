@@ -29,17 +29,21 @@
 
     &-control{
         @include tab(744px){
-            display: flex;
+            position: absolute;
+            right: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 30px;
         }
     }
 
     &-contact{
         @include tab(744px){
-            @include positioning(flex, _, center, center, 85px, _);
+            @include positioning(flex, _, _, center, 85px, _);
         }
 
         @include desc(1440px){
-            @include positioning(flex, _, center, flex-start, 226px, _);
+            @include positioning(flex, _, _, flex-start, 226px, _);
         }
     
     }
@@ -54,7 +58,6 @@
         }
 
         @include tab(744px){
-            // padding: 30px;
             position: absolute;
             box-shadow: none;
             bottom: 0;

@@ -3,13 +3,13 @@ body{
     height: 100%;
     // width: 100%;
 
-    &-home{
-        background-color: #090A0E;
-    }
-
     @include tab(744px){
         background-color: #090A0E;
     }
+}
+
+.body-home{
+    background-color: #090A0E;
 }
 
 html{

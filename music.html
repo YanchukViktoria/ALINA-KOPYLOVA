@@ -23,11 +23,10 @@
     
                     <nav class="nav">
                         <ul class="nav-list">
-                            <li class="nav-list-item"><a href="./about.html" class="nav-list-link">About</a></li>
-                            <li class="nav-list-item"><a href="./music.html" class="nav-list-link">Music</a></li>
-                            <li class="nav-list-item"><a href="./video.html" class="nav-list-link">Video</a></li>
-                            <li class="nav-list-item"><a href="./contacts.html" class="nav-list-link">Contact</a></li>
                             <li class="nav-menu-list-item"><a href="./index.html" class="nav-list-link">Home</a></li>
+                            <li class="nav-list-item"><a href="./video.html" class="nav-list-link">Video</a></li>
+                            <li class="nav-list-item"><a href="./about.html" class="nav-list-link">About</a></li>
+                            <li class="nav-list-item"><a href="./contacts.html" class="nav-list-link">Contact</a></li>
                         </ul>
                     </nav>
         
@@ -49,11 +48,10 @@
     
                             <nav class="nav-menu">
                                 <ul class="nav-menu-list">
-                                    <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
-                                    <li class="nav-menu-list-item"><a href="./video.html" class="nav-menu-list-link">Video</a></li>
-                                    <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
-                                    <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
                                     <li class="nav-menu-list-item"><a href="./index.html" class="nav-menu-list-link">Home</a></li>
+                                    <li class="nav-menu-list-item"><a href="./music.html" class="nav-menu-list-link">Music</a></li>
+                                    <li class="nav-menu-list-item"><a href="./about.html" class="nav-menu-list-link">About</a></li>
+                                    <li class="nav-menu-list-item"><a href="./contacts.html" class="nav-menu-list-link">Contact</a></li>
                                 </ul>
                             </nav>
                     </div>
@@ -84,12 +82,26 @@
                             <h4 class="contol-title">Я повернусь</h4>
                             <p class="control-desc">Alina Kopylova</p>
                         </div>
-                        <input class="control-input" type="range">
-                        <button class="control-btn control-btn-tab">
-                            <svg class="control-svg" width="14" height="14">
-                                <use href="./symbol-defs.svg#save-like"></use>
-                            </svg>
-                        </button>
+                        <!-- <input class="control-input control-input-music" type="range"> -->
+
+                        <div class="audio-player">
+                            <audio id="audio" src="./music/alinaKopylova-YaPovernys.mp3"></audio>
+                            <div class="controls">
+                                <button class="btn-audio" id="playPauseBtn">
+                                    <svg width="24" height="20" class="control-svg">
+                                        <use id="audio-use" xlink:href="#play"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="time">
+                                <span class="audio-span" id="currentTime">0:00</span>
+                                <span class="audio-span">/</span>
+                                <span class="audio-span" id="duration"> 3:01</span>
+                            </div>
+                            <div class="progress-container" onclick="setProgress(event)">
+                                <div class="progress" id="progress"></div>
+                            </div>
+                        </div>
                     </div>
                     <ul class="control-list">
                         <li class="control-list-item">
@@ -101,9 +113,11 @@
                         </li>
                         <li class="control-list-item">
                             <button class="control-btn control-btn-stop">
-                                <svg class="control-svg" width="13" height="17">
-                                    <use href="./symbol-defs.svg#stop"></use>
-                                </svg>
+                                <a class="control-list" target="_blank" href="https://www.youtube.com/watch?v=QAZkqmpBEQA">
+                                    <svg class="control-svg" width="13" height="17">
+                                        <use href="./symbol-defs.svg#stop"></use>
+                                    </svg>
+                                </a>
                             </button>
                         </li>
                         <li class="control-list-item">
@@ -193,6 +207,16 @@
             </div>
         </footer>
     </div>
+
+    <svg style="display: none;">
+        <symbol id="stop" viewBox="0 0 26 32">
+            <path d="M0.941 31.559h8.157v-31.545h-8.157v31.545zM17.255 0.014v31.545h8.157v-31.545h-8.157z"></path>
+        </symbol>
+        <symbol id="play" viewBox="0 0 37 32">
+            <path d="M29.127 13.438c0.917 0.55 1.474 1.519 1.474 2.562s-0.558 2.012-1.474 2.506l-18.455 11c-0.95 0.619-2.139 0.644-3.109 0.112s-1.571-1.531-1.571-2.619v-22c0-1.085 0.601-2.086 1.571-2.617s2.159-0.509 3.109 0.057l18.455 10.998z"></path>
+        </symbol>
+    </svg>
+
     <script src="./burger.js"></script>
     <script src="./script.js" type="module"></script>
 </body>

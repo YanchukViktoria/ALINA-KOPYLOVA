@@ -1,0 +1,42 @@
+.audio-player {
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: inherit;
+    @include positioning(flex, _, center, center, 5px, _);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 10px;
+    background-color: $red;
+}
+
+.audio-container{
+    width: 100%;
+    background-color: #332929;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.time{
+    @include positioning(flex, _, _, center, 3px, _);
+}
+
+.audio-span{
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    color: $blue;
+
+    @include tab(744px){
+        color: $white;
+    }
+}

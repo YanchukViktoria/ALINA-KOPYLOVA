@@ -18,3 +18,12 @@
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.08);
     border-radius: 18px;
 }
+
+.about-link{
+    @include positioning(flex, _, center, center, 8px, _);
+    color: $white;
+}
+
+.hero-about-svg{
+    fill: currentColor;
+}

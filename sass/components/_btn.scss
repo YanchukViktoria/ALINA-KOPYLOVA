@@ -168,3 +168,27 @@
         padding: 0;
     }
 }
+
+.btn-video-play{
+    @include positioning(flex, _, center, center, _, _);
+    border: 2px solid $blue;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 0 auto 0 auto;
+    background-color: inherit;
+    color: $blue;
+
+    @include tab(744px){
+        display: none;
+    }
+}
+
+.btn-audio{
+    background-color: inherit;
+    @include positioning(flex, _, center, center, _, _);
+    color: $blue;
+
+    @include tab(744px){
+        color: $white;
+    }
+}

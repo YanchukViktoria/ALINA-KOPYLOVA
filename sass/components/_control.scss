@@ -70,6 +70,7 @@
 
     .section-control{
         padding: 55px 0 19px 0;
+        position: relative;
     
         @include tab(744px){
             padding: 0;
@@ -80,51 +81,18 @@
     
         @include desc(1440px){
             bottom: 159px;
+            z-index: 2;
         }
         
         &-music{
             @include tab(744px){
-                bottom: 93px;
+                bottom: 70px;
+                z-index: 2;
             }
         }
     }
     
     .control-input{
-        width: 100%;
-        position: relative;
-        flex: 0.8;
-    
-        &::before{
-            position: absolute;
-            content: "17:05";
-            font-family: $raleway;
-            font-weight: 400;
-            font-size: 12px;
-            @include lh(12, 14);
-            color: $grey;
-            bottom: 22px;
-            left: 0;
-    
-            @include tab(744px){
-                display: none;
-            }
-        }
-    
-        &::after{
-            position: absolute;
-            content: "-11:41";
-            font-family: $raleway;
-            font-weight: 400;
-            font-size: 12px;
-            @include lh(12, 14);
-            color: $grey;
-            bottom: 22px;
-            right: 0;
-    
-            @include tab(744px){
-                display: none;
-            }
-        }
     
         &[type="range"]{
             accent-color: $red;
@@ -133,15 +101,64 @@
             border-color: inherit;
             color: $red;
             outline-color: inherit;
-            margin: 0 auto;
         }
         
     
         @include tab(744px){
-            flex: 1;
+            flex: 0.8;
             display: flex;
         }
+
+        @include desc(1440px){
+            flex: 2;
+            max-width: 762px
+        }
     }
+
+.control-input-video{
+    display: none;
+    
+    @include tab(744px){
+        display: block;
+    }
+}
+
+.control-input-music{
+    width: 100%;
+    position: relative;
+
+    &::before{
+        position: absolute;
+        content: "17:05";
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 12px;
+        @include lh(12, 14);
+        color: $grey;
+        bottom: 22px;
+        left: 0;
+
+        @include tab(744px){
+            display: none;
+        }
+    }
+
+    &::after{
+        position: absolute;
+        content: "-11:41";
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 12px;
+        @include lh(12, 14);
+        color: $grey;
+        bottom: 22px;
+        right: 0;
+
+        @include tab(744px){
+            display: none;
+        }
+    }
+}
     
     .control-list{
         @include positioning(flex, _, center, center, 33px, _);
@@ -169,17 +186,12 @@
         margin-bottom: 9px;
         @include tab(744px){
             margin: 0;
-            @include positioning(flex, _, space-between, center, 14px, _);
-        }
-    
-        @include desc(1440px){
-            max-width: 846px;
-            margin: 0 auto;
+            @include positioning(flex, _, center, center, 14px, _);
         }
     
         &-music{
             flex: 0.7;
-            @include positioning(flex, _, _, center, 0, _);
+            @include positioning(flex, _, center, center, 0, _);
     
             @include desc(1440px){
                 margin: 0;
@@ -211,4 +223,8 @@
         font-size: 12px;
         @include lh(12, 16);
         color: $white;
+    }
+
+    .control-list{
+        @include positioning(flex, _, center, center, _, _);
     }

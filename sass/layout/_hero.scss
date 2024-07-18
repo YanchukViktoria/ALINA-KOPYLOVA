@@ -18,14 +18,14 @@
         padding: 241px 0 221px 0;
         background-size: cover;
         background-position: center;
-        @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
+        @include bg-image("../main/tab-webp/bg-tab-1x.webp", "../main/tab/bg-tab-1x.jpg");
 
         @include retina(2, 192dpi, 2dppx){
-            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-2x.webp", "../main/tab/bg-main-video-contact-tab-2x.jpg");
+            @include bg-image("../main/tab-webp/bg-tab-2x.webp", "../main/tab/bg-tab-2x.jpg");
         }
 
         @include retina(3, 288dpi, 3dppx){
-            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-3x.webp", "../main/tab/bg-main-video-contact-tab-3x.jpg");
+            @include bg-image("../main/tab-webp/bg-tab-3x.webp", "../main/tab/bg-tab-3x.jpg");
         }
     }
 
@@ -34,14 +34,14 @@
         background-size: cover;
         background-position: center;
 
-        @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
+        @include bg-image("../main/desc-webp/bg-desc-1x.webp", "../main/desc/bg-desc-desc1x.jpg");
 
         @include retina(2, 192dpi, 2dppx){
-            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-2x.webp", "../main/desc/bg-main-video-contact-desc-2x.jpg");
+            @include bg-image("../main/desc-webp/bg-desc-2x.webp", "../main/desc/bg-desc-2x.jpg");
         }
 
         @include retina(3, 288dpi, 3dppx){
-            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-3x.webp", "../main/desc/bg-main-video-contact-desc-3x.jpg");
+            @include bg-image("../main/desc-webp/bg-desc-3x.webp", "../main/desc/bg-desc-3x.jpg");
         }
     }
 
@@ -75,7 +75,7 @@
             @include bg-image("../main/desc-webp/bg-about-desc-1x.webp", "../main/desc/bg-about-desc-1x.jpg");
 
             @include retina(2, 192dpi, 2dppx){
-                @include bg-image("../main/desc-webp/bg-about-desc-2x.webp", "../main/desc/bg-about-desc-2x.jpg");
+                @include bg-image("../main/desc-webp/bg-about-desc-2x.webp", "../main/desc/bg-about-tab-2x.jpg");
             }
 
             @include retina(3, 288dpi, 3dppx){
@@ -91,33 +91,32 @@
             padding: 78px 0 138px 0;
             background-position: center;
             background-size: cover;
-            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-1x.webp", "../main/tab/bg-main-video-contact-tab-1x.jpg");
+            @include bg-image("../main/tab-webp/bg-tab-1x.webp", "../main/tab/bg-tab-1x.jpg");
 
             @include retina(2, 192dpi, 2dppx){
-                @include bg-image("../main/tab-webp/bg-main-video-contact-tab-2x.webp", "../main/tab/bg-main-video-contact-tab-2x.jpg");
+                @include bg-image("../main/tab-webp/bg-tab-2x.webp", "../main/tab/bg-tab-2x.jpg");
             }
-
+    
             @include retina(3, 288dpi, 3dppx){
-                @include bg-image("../main/tab-webp/bg-main-video-contact-tab-3x.webp", "../main/tab/bg-main-video-contact-tab-3x.jpg");
+                @include bg-image("../main/tab-webp/bg-tab-3x.webp", "../main/tab/bg-tab-3x.jpg");
             }
         }
 
         @include desc(1440px){
             background-position: center;
-            background-color: black;
             background-size: cover;
-            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
+            @include bg-image("../main/desc-webp/bg-desc-1x.webp", "../main/desc/bg-desc-desc1x.jpg");
 
             @include retina(2, 192dpi, 2dppx){
-                @include bg-image("../main/desc-webp/bg-main-video-contact-desc-2x.webp", "../main/desc/bg-main-video-contact-desc-2x.jpg");
+                @include bg-image("../main/desc-webp/bg-desc-2x.webp", "../main/desc/bg-desc-2x.jpg");
             }
-
+    
             @include retina(3, 288dpi, 3dppx){
-                @include bg-image("../main/desc-webp/bg-main-video-contact-desc-3x.webp", "../main/desc/bg-main-video-contact-desc-3x.jpg");
+                @include bg-image("../main/desc-webp/bg-desc-3x.webp", "../main/desc/bg-desc-3x.jpg");
             }
                 padding: 104px 0 0 0;
                 height: 100vh;
-            }
+        }
     }
 
     &-music{
@@ -130,14 +129,14 @@
             background-size: cover;
             background-position: center;
             background-color: black;
-            @include bg-image("../main/tab-webp/bg-music-tab-1x.webp", "../main/tab/bg-music-tab-1x.jpg");
+            @include bg-image("../main/tab-webp/bg-tab-1x.webp", "../main/tab/bg-tab-1x.jpg");
 
             @include retina(2, 192dpi, 2dppx){
-                @include bg-image("../main/tab-webp/bg-music-tab-2x.webp", "../main/tab/bg-music-tab-2x.jpg");
+                @include bg-image("../main/tab-webp/bg-tab-2x.webp", "../main/tab/bg-tab-2x.jpg");
             }
-
+    
             @include retina(3, 288dpi, 3dppx){
-                @include bg-image("../main/tab-webp/bg-music-tab-3x.webp", "../main/tab/bg-music-tab-3x.jpg");
+                @include bg-image("../main/tab-webp/bg-tab-3x.webp", "../main/tab/bg-tab-3x.jpg");
             }
         }
 
@@ -146,39 +145,59 @@
             background-position: center;
             background-size: cover;
             background-color: black;
-            @include bg-image("../main/desc-webp/bg-music-desc-1x.webp", "../main/desc/bg-music-desc-1x.jpg");
+            @include bg-image("../main/desc-webp/bg-desc-1x.webp", "../main/desc/bg-desc-desc1x.jpg");
 
             @include retina(2, 192dpi, 2dppx){
-                @include bg-image("../main/desc-webp/bg-music-desc-2x.webp", "../main/desc/bg-music-desc-2x.jpg");
+                @include bg-image("../main/desc-webp/bg-desc-2x.webp", "../main/desc/bg-desc-2x.jpg");
             }
-
+    
             @include retina(3, 288dpi, 3dppx){
-                @include bg-image("../main/desc-webp/bg-music-desc-3x.webp", "../main/desc/bg-music-desc-3x.jpg");
+                @include bg-image("../main/desc-webp/bg-desc-3x.webp", "../main/desc/bg-desc-3x.jpg");
             }
         }
     }
 
     &-contact{
         padding: 130px 0 311px 0;
+        @include bg-image("../main/mb-webp/bg-contact-mb-1x.webp", "../main/mb/bg-contact-mb-1x.jpg");
+
+        @include retina(2, 192dpi, 2dppx){
+            @include bg-image("../main/mb-webp/bg-contact-mb-2x.webp", "../main/mb/bg-contact-mb-2x.jpg");
+        }
+
+        @include retina(3, 288dpi, 3dppx){
+            @include bg-image("../main/mb-webp/bg-contact-mb-3x.webp", "../main/mb/bg-contact-mb-3x.jpg");
+        }
 
         @include tab(744px){
             height: 100vh;
             padding: 80px 0 0px 0;
+            @include bg-image("../main/tab-webp/bg-tab-1x.webp", "../main/tab/bg-tab-1x.jpg");
+
+            @include retina(2, 192dpi, 2dppx){
+                @include bg-image("../main/tab-webp/bg-tab-2x.webp", "../main/tab/bg-tab-2x.jpg");
+            }
+    
+            @include retina(3, 288dpi, 3dppx){
+                @include bg-image("../main/tab-webp/bg-tab-3x.webp", "../main/tab/bg-tab-3x.jpg");
+            }
         }
 
-        @include desc(1440px){
-            padding: 118px 0 130px 0;
-            background-position: center;
-            background-color: black;
-            @include bg-image("../main/desc-webp/bg-main-video-contact-desc-1x.webp", "../main/desc/bg-main-video-contact-desc-1x.jpg");
+            @include desc(1440px){
+                padding: 118px 0 130px 0;
+                background-position: center;
+                background-color: black;
 
-                    @include retina(2, 192dpi, 2dppx){
-            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-2x.webp", "../main/tab/bg-main-video-contact-tab-2x.jpg");
-        }
+                @include bg-image("../main/desc-webp/bg-desc-1x.webp", "../main/desc/bg-desc-desc1x.jpg");
 
-        @include retina(3, 288dpi, 3dppx){
-            @include bg-image("../main/tab-webp/bg-main-video-contact-tab-3x.webp", "../main/tab/bg-main-video-contact-tab-3x.jpg");
-        }
+                @include retina(2, 192dpi, 2dppx){
+                    @include bg-image("../main/desc-webp/bg-desc-2x.webp", "../main/desc/bg-desc-2x.jpg");
+                }
+        
+                @include retina(3, 288dpi, 3dppx){
+                    @include bg-image("../main/desc-webp/bg-desc-3x.webp", "../main/desc/bg-desc-3x.jpg");
+                }
+            
         }
     }
 }

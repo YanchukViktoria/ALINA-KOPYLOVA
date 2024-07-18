@@ -9,6 +9,10 @@
             font-weight: 400;
             font-size: 16px;
             @include lh(16, 24);
+
+            @include tab(744px){
+                color: $red;
+            }
         }
     }
 

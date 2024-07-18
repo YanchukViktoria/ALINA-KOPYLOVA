@@ -1,10 +1,6 @@
 .footer{
     @include positioning(flex, _, center, center, _, _);
 
-    &-main{
-        background-color: #07080D;
-    }
-
     &-mob-menu{
         @include positioning(flex, _, center, center, _, _);
         @include tab(744px){

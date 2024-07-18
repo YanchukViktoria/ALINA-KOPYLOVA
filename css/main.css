@@ -186,15 +186,6 @@ body {
   margin: 0 auto;
   height: 100%;
 }
-@media screen and (min-width: 744px) {
-  body {
-    background-color: #090A0E;
-  }
-}
-
-.body-home {
-  background-color: #090A0E;
-}
 
 html {
   height: 100%;
@@ -1360,6 +1351,11 @@ html {
   line-height: 1.5;
 }
 @media screen and (min-width: 744px) {
+  .nav-list-link {
+    color: rgb(209, 22, 22);
+  }
+}
+@media screen and (min-width: 744px) {
   .nav {
     display: block;
   }
@@ -1627,31 +1623,31 @@ html {
     padding: 241px 0 221px 0;
     background-size: cover;
     background-position: center;
-    background-image: url("../main/tab/bg-main-video-contact-tab-1x.jpg");
+    background-image: url("../main/tab/bg-tab-1x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-1x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-1x.webp")) {
     .section-hero {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-1x.webp");
+      background-image: url("../main/tab-webp/bg-tab-1x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 2), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 744px) and (min-resolution: 192dpi), screen and (min-width: 744px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url("../main/tab/bg-main-video-contact-tab-2x.jpg");
+    background-image: url("../main/tab/bg-tab-2x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-2x.webp")) {
     .section-hero {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp");
+      background-image: url("../main/tab-webp/bg-tab-2x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 3), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 744px) and (min-resolution: 288dpi), screen and (min-width: 744px) and (min-resolution: 3dppx) {
   .section-hero {
-    background-image: url("../main/tab/bg-main-video-contact-tab-3x.jpg");
+    background-image: url("../main/tab/bg-tab-3x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-3x.webp")) {
     .section-hero {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp");
+      background-image: url("../main/tab-webp/bg-tab-3x.webp");
     }
   }
 }
@@ -1660,31 +1656,31 @@ html {
     padding: 393px 0 304px;
     background-size: cover;
     background-position: center;
-    background-image: url("../main/desc/bg-main-video-contact-desc-1x.jpg");
+    background-image: url("../main/desc/bg-desc-desc1x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-1x.webp")) {
     .section-hero {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp");
+      background-image: url("../main/desc-webp/bg-desc-1x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url("../main/desc/bg-main-video-contact-desc-2x.jpg");
+    background-image: url("../main/desc/bg-desc-2x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-2x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-2x.webp")) {
     .section-hero {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-2x.webp");
+      background-image: url("../main/desc-webp/bg-desc-2x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min-resolution: 288dpi), screen and (min-width: 1440px) and (min-resolution: 3dppx) {
   .section-hero {
-    background-image: url("../main/desc/bg-main-video-contact-desc-3x.jpg");
+    background-image: url("../main/desc/bg-desc-3x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-3x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-3x.webp")) {
     .section-hero {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-3x.webp");
+      background-image: url("../main/desc-webp/bg-desc-3x.webp");
     }
   }
 }
@@ -1741,7 +1737,7 @@ html {
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section-hero-about {
-    background-image: url("../main/desc/bg-about-desc-2x.jpg");
+    background-image: url("../main/desc/bg-about-tab-2x.jpg");
   }
   @supports (background-image: url("../main/desc-webp/bg-about-desc-2x.webp")) {
     .section-hero-about {
@@ -1768,66 +1764,65 @@ html {
     padding: 78px 0 138px 0;
     background-position: center;
     background-size: cover;
-    background-image: url("../main/tab/bg-main-video-contact-tab-1x.jpg");
+    background-image: url("../main/tab/bg-tab-1x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-1x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-1x.webp")) {
     .section-hero-video {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-1x.webp");
+      background-image: url("../main/tab-webp/bg-tab-1x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 2), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 744px) and (min-resolution: 192dpi), screen and (min-width: 744px) and (min-resolution: 2dppx) {
   .section-hero-video {
-    background-image: url("../main/tab/bg-main-video-contact-tab-2x.jpg");
+    background-image: url("../main/tab/bg-tab-2x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-2x.webp")) {
     .section-hero-video {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp");
+      background-image: url("../main/tab-webp/bg-tab-2x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 3), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 744px) and (min-resolution: 288dpi), screen and (min-width: 744px) and (min-resolution: 3dppx) {
   .section-hero-video {
-    background-image: url("../main/tab/bg-main-video-contact-tab-3x.jpg");
+    background-image: url("../main/tab/bg-tab-3x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-3x.webp")) {
     .section-hero-video {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp");
+      background-image: url("../main/tab-webp/bg-tab-3x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) {
   .section-hero-video {
     background-position: center;
-    background-color: black;
     background-size: cover;
-    background-image: url("../main/desc/bg-main-video-contact-desc-1x.jpg");
+    background-image: url("../main/desc/bg-desc-desc1x.jpg");
     padding: 104px 0 0 0;
     height: 100vh;
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-1x.webp")) {
     .section-hero-video {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp");
+      background-image: url("../main/desc-webp/bg-desc-1x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section-hero-video {
-    background-image: url("../main/desc/bg-main-video-contact-desc-2x.jpg");
+    background-image: url("../main/desc/bg-desc-2x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-2x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-2x.webp")) {
     .section-hero-video {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-2x.webp");
+      background-image: url("../main/desc-webp/bg-desc-2x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min-resolution: 288dpi), screen and (min-width: 1440px) and (min-resolution: 3dppx) {
   .section-hero-video {
-    background-image: url("../main/desc/bg-main-video-contact-desc-3x.jpg");
+    background-image: url("../main/desc/bg-desc-3x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-3x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-3x.webp")) {
     .section-hero-video {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-3x.webp");
+      background-image: url("../main/desc-webp/bg-desc-3x.webp");
     }
   }
 }
@@ -1842,31 +1837,31 @@ html {
     background-size: cover;
     background-position: center;
     background-color: black;
-    background-image: url("../main/tab/bg-music-tab-1x.jpg");
+    background-image: url("../main/tab/bg-tab-1x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-music-tab-1x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-1x.webp")) {
     .section-hero-music {
-      background-image: url("../main/tab-webp/bg-music-tab-1x.webp");
+      background-image: url("../main/tab-webp/bg-tab-1x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 2), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 744px) and (min-resolution: 192dpi), screen and (min-width: 744px) and (min-resolution: 2dppx) {
   .section-hero-music {
-    background-image: url("../main/tab/bg-music-tab-2x.jpg");
+    background-image: url("../main/tab/bg-tab-2x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-music-tab-2x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-2x.webp")) {
     .section-hero-music {
-      background-image: url("../main/tab-webp/bg-music-tab-2x.webp");
+      background-image: url("../main/tab-webp/bg-tab-2x.webp");
     }
   }
 }
 @media screen and (min-width: 744px) and (min-device-pixel-ratio: 3), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 744px) and (min-resolution: 288dpi), screen and (min-width: 744px) and (min-resolution: 3dppx) {
   .section-hero-music {
-    background-image: url("../main/tab/bg-music-tab-3x.jpg");
+    background-image: url("../main/tab/bg-tab-3x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-music-tab-3x.webp")) {
+  @supports (background-image: url("../main/tab-webp/bg-tab-3x.webp")) {
     .section-hero-music {
-      background-image: url("../main/tab-webp/bg-music-tab-3x.webp");
+      background-image: url("../main/tab-webp/bg-tab-3x.webp");
     }
   }
 }
@@ -1876,41 +1871,93 @@ html {
     background-position: center;
     background-size: cover;
     background-color: black;
-    background-image: url("../main/desc/bg-music-desc-1x.jpg");
+    background-image: url("../main/desc/bg-desc-desc1x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-music-desc-1x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-1x.webp")) {
     .section-hero-music {
-      background-image: url("../main/desc-webp/bg-music-desc-1x.webp");
+      background-image: url("../main/desc-webp/bg-desc-1x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section-hero-music {
-    background-image: url("../main/desc/bg-music-desc-2x.jpg");
+    background-image: url("../main/desc/bg-desc-2x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-music-desc-2x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-2x.webp")) {
     .section-hero-music {
-      background-image: url("../main/desc-webp/bg-music-desc-2x.webp");
+      background-image: url("../main/desc-webp/bg-desc-2x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min-resolution: 288dpi), screen and (min-width: 1440px) and (min-resolution: 3dppx) {
   .section-hero-music {
-    background-image: url("../main/desc/bg-music-desc-3x.jpg");
+    background-image: url("../main/desc/bg-desc-3x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-music-desc-3x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-3x.webp")) {
     .section-hero-music {
-      background-image: url("../main/desc-webp/bg-music-desc-3x.webp");
+      background-image: url("../main/desc-webp/bg-desc-3x.webp");
     }
   }
 }
 .section-hero-contact {
   padding: 130px 0 311px 0;
+  background-image: url("../main/mb/bg-contact-mb-1x.jpg");
+}
+@supports (background-image: url("../main/mb-webp/bg-contact-mb-1x.webp")) {
+  .section-hero-contact {
+    background-image: url("../main/mb-webp/bg-contact-mb-1x.webp");
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero-contact {
+    background-image: url("../main/mb/bg-contact-mb-2x.jpg");
+  }
+  @supports (background-image: url("../main/mb-webp/bg-contact-mb-2x.webp")) {
+    .section-hero-contact {
+      background-image: url("../main/mb-webp/bg-contact-mb-2x.webp");
+    }
+  }
+}
+@media (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .section-hero-contact {
+    background-image: url("../main/mb/bg-contact-mb-3x.jpg");
+  }
+  @supports (background-image: url("../main/mb-webp/bg-contact-mb-3x.webp")) {
+    .section-hero-contact {
+      background-image: url("../main/mb-webp/bg-contact-mb-3x.webp");
+    }
+  }
 }
 @media screen and (min-width: 744px) {
   .section-hero-contact {
     height: 100vh;
     padding: 80px 0 0px 0;
+    background-image: url("../main/tab/bg-tab-1x.jpg");
+  }
+  @supports (background-image: url("../main/tab-webp/bg-tab-1x.webp")) {
+    .section-hero-contact {
+      background-image: url("../main/tab-webp/bg-tab-1x.webp");
+    }
+  }
+}
+@media screen and (min-width: 744px) and (min-device-pixel-ratio: 2), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 744px) and (min-resolution: 192dpi), screen and (min-width: 744px) and (min-resolution: 2dppx) {
+  .section-hero-contact {
+    background-image: url("../main/tab/bg-tab-2x.jpg");
+  }
+  @supports (background-image: url("../main/tab-webp/bg-tab-2x.webp")) {
+    .section-hero-contact {
+      background-image: url("../main/tab-webp/bg-tab-2x.webp");
+    }
+  }
+}
+@media screen and (min-width: 744px) and (min-device-pixel-ratio: 3), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 744px) and (min-resolution: 288dpi), screen and (min-width: 744px) and (min-resolution: 3dppx) {
+  .section-hero-contact {
+    background-image: url("../main/tab/bg-tab-3x.jpg");
+  }
+  @supports (background-image: url("../main/tab-webp/bg-tab-3x.webp")) {
+    .section-hero-contact {
+      background-image: url("../main/tab-webp/bg-tab-3x.webp");
+    }
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1918,31 +1965,31 @@ html {
     padding: 118px 0 130px 0;
     background-position: center;
     background-color: black;
-    background-image: url("../main/desc/bg-main-video-contact-desc-1x.jpg");
+    background-image: url("../main/desc/bg-desc-desc1x.jpg");
   }
-  @supports (background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-1x.webp")) {
     .section-hero-contact {
-      background-image: url("../main/desc-webp/bg-main-video-contact-desc-1x.webp");
+      background-image: url("../main/desc-webp/bg-desc-1x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .section-hero-contact {
-    background-image: url("../main/tab/bg-main-video-contact-tab-2x.jpg");
+    background-image: url("../main/desc/bg-desc-2x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-2x.webp")) {
     .section-hero-contact {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-2x.webp");
+      background-image: url("../main/desc-webp/bg-desc-2x.webp");
     }
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1440px) and (min-resolution: 288dpi), screen and (min-width: 1440px) and (min-resolution: 3dppx) {
   .section-hero-contact {
-    background-image: url("../main/tab/bg-main-video-contact-tab-3x.jpg");
+    background-image: url("../main/desc/bg-desc-3x.jpg");
   }
-  @supports (background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp")) {
+  @supports (background-image: url("../main/desc-webp/bg-desc-3x.webp")) {
     .section-hero-contact {
-      background-image: url("../main/tab-webp/bg-main-video-contact-tab-3x.webp");
+      background-image: url("../main/desc-webp/bg-desc-3x.webp");
     }
   }
 }
@@ -2290,9 +2337,6 @@ html {
   -ms-flex-wrap: _;
       flex-wrap: _;
 }
-.footer-main {
-  background-color: #07080D;
-}
 .footer-mob-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2469,6 +2513,11 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+@media screen and (min-width: 744px) {
+  .nav-list-link {
+    color: rgb(209, 22, 22);
+  }
 }
 @media screen and (min-width: 744px) {
   .nav {

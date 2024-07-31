@@ -282,6 +282,12 @@
             text-align: left;
             margin: 0;
         }
+
+        &-mb{
+            @include tab(744px){
+                display: none;
+            }
+        }
     }
 
     &-contact{
@@ -327,6 +333,7 @@
         @include desc(1440px){
             max-width: 839px;
         }
+
     }
     
     &-video{
@@ -363,16 +370,18 @@
 .hero-img{
     border-radius: 24px;
     margin: 0 auto;
+    width: 225px;
 
     @include tab(744px){
-        
+        width: auto;
         border-radius: 0;
         height: 343px;
     }
 
     @include desc(1440px){
+        display: block;
         height: 458px;
-        margin-bottom: 0 auto 52px auto;
+        margin: 0 auto 52px auto;
     }
 
     &-mb{

@@ -29,11 +29,11 @@
 
     &-control{
         @include tab(744px){
-            position: absolute;
-            right: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            top: 30px;
+            // position: absolute;
+            // right: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+            bottom: 70px;
         }
     }
 

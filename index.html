@@ -12,12 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/">
+    <link rel="icon" type="/image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="/image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#000000">
+
 </head>
 <body class="body body-home"> 
     <div class="wrapper">
         <header class="header header-tab">
             <div class="container">
-                <button class="burger-btn menu-open-btn"">
+                <button class="burger-btn menu-open-btn">
                     <svg class="burger-svg" width="21" height="15">
                         <use href="./symbol-defs.svg#burger"></use>
                     </svg>
@@ -69,22 +78,14 @@
             </section>
         </main>
         <footer class="footer footer-main">
-            <div class="container container-footer">
-                <div class="footer-mob-menu">
-                    <button class="footer-btn footer-btn-home">
-                        <svg class="footer-svg" width="23" height="20">
-                            <use href="./symbol-defs.svg#home"></use>
-                        </svg>
-                        <a href="./index.html" target="_blank" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
-                    </button>
-                </div>
-                <div class="footer-menu">
+            <div class="container container-footer container-footer-main">
+                <div class="footer-menu footer-menu-main">
                     <div class="footer-anim-container">
                         <button class="footer-menu-btn">
                             <svg class="footer-svg footer-svg-anim" width="11" height="11">
                                 <use href="./symbol-defs.svg#subscribe"></use>
                             </svg>
-                            <p class="footer-menu-desc">Підписатися</p>
+                            <span class="footer-menu-desc">Підписатися</span>
                         </button>
                         <ul class="social-hidden-list">
                             <li class="social-hidden-item">
@@ -110,9 +111,17 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="footer-mob-menu">
+                        <button class="footer-btn footer-btn-home">
+                            <svg class="footer-svg" width="23" height="20">
+                                <use href="./symbol-defs.svg#home"></use>
+                            </svg>
+                            <a href="./index.html" target="_blank" class="footer-menu-list-link footer-menu-list-link-first">Home</a>
+                        </button>
+                    </div>
                     <div class="footer-anim-container">
                         <button class="footer-menu-btn">
-                            <p class="footer-menu-desc-listen">Слухати</p>
+                            <span class="footer-menu-desc-listen">Слухати</span>
                             <svg class="footer-svg-anim" width="12" height="12">
                                 <use href="./symbol-defs.svg#headphones"></use>
                             </svg>

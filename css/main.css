@@ -140,6 +140,12 @@
   -webkit-box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
           box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
 }
+.container-footer-main {
+  position: absolute;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  bottom: 0;
+}
 @media screen and (min-width: 744px) {
   .container-footer {
     position: absolute;
@@ -235,33 +241,6 @@ html {
   .hero-btn {
     margin: 0 auto 28px auto;
   }
-}
-
-.track-btn {
-  margin-top: 28px;
-  padding: 12px 13px;
-  border-radius: 50%;
-  border: 1px solid rgb(20, 62, 144);
-  width: 40px;
-  height: 39px;
-  background-color: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: _;
-          flex-direction: _;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: _;
-  -ms-flex-wrap: _;
-      flex-wrap: _;
-  color: rgb(20, 62, 144);
 }
 
 .btn-music {
@@ -936,6 +915,30 @@ html {
 
 .track-img {
   border-radius: 16px;
+}
+
+.track-link {
+  color: rgb(20, 62, 144);
+  border-radius: 50%;
+  border: 1px solid rgb(20, 62, 144);
+  width: 40px;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
 }
 
 .track-container {
@@ -2456,6 +2459,26 @@ html {
   font-weight: 400;
   font-size: 7px;
   line-height: 1.7142857143;
+}
+.footer-menu-main {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: _;
+          flex-direction: _;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: _;
+  -ms-flex-wrap: _;
+      flex-wrap: _;
+  width: 100%;
 }
 
 .footer-anim-container {

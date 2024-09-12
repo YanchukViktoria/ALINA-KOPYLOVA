@@ -49,6 +49,12 @@
         font-size: 7px;
         @include lh(7, 12);
     }
+
+    &-main{
+        display: block;
+        @include positioning(flex, _, space-between, center, _, _);
+        width: 100%;
+    }
 }
 
 

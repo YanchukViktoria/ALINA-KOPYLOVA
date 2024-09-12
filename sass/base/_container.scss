@@ -57,6 +57,12 @@
             box-shadow: -2px 0px 10px 0px rgba(104, 108, 112, 0.2);
         }
 
+        &-main{
+            position: absolute;
+            box-shadow: none;
+            bottom: 0;
+        }
+
         @include tab(744px){
             position: absolute;
             box-shadow: none;

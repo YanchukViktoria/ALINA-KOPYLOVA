@@ -1597,6 +1597,7 @@ html {
   background-repeat: no-repeat;
   font-family: Rufina;
   padding: 292px 0 237px 0;
+  height: 100vh;
 }
 @supports (background-image: url("../main/mb-webp/bg-main-mb-1x.webp")) {
   .section-hero {

@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     font-family: $rufina;
     padding: 292px 0 237px 0;
+    height: 100vh;
 
     @include retina(2, 192dpi, 2dppx){
         @include bg-image("../main/mb-webp/bg-main-mb-2x.webp", "../main/mb/bg-main-mb-2x.jpg");

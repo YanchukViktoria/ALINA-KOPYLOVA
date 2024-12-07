@@ -1115,6 +1115,9 @@ html {
     bottom: 100px;
   }
 }
+.section-control-music-third {
+  bottom: 172px;
+}
 
 .control-input[type=range] {
   accent-color: rgb(209, 22, 22);

@@ -107,8 +107,6 @@
                     </div>
 
                     <picture class="hero-picture">
-
-
                         <source media="(max-width:600px)" srcset="./main/mb-webp/music-mb-1x.webp 1x, ./main/mb-webp/music-mb-1x.webp 2x, ./main/mb-webp/music-mb-1x.webp 3x" type="image/webp">
                         <source media="(max-width:600px)" srcset="./main/mb/music-mb-1x.jpg 1x, ./main/mb/music-mb-2x.jpg 2x, ./main/mb/music-mb-3x.jpg 3x" type="image/jpeg">
                         <img class="hero-img" src="./main/mb/music-mb-1x.jpg" alt="">
@@ -131,6 +129,43 @@
 
                                 <div class="audio-player">
                                     <audio class="audio" src="./music/alinakopylova-Error.mp3"></audio>
+                                    <div class="controls">
+                                        <button class="btn-audio playPauseBtn">
+                                            <svg width="24" height="20" class="control-svg">
+                                                <use class="audio-use" xlink:href="#play"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="time">
+                                        <span class="audio-span currentTime">0:00</span>
+                                        <span class="audio-span">/</span>
+                                        <span class="audio-span duration">2:24</span>
+                                    </div>
+                                    <div class="progress-container">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <picture class="hero-picture">
+                        <source media="(max-width:600px)" srcset="./main/mb-webp/music-remix-mb-1x.webp 1x, ./main/mb-webp/music-remix-mb-1x.webp 2x, ./main/mb-webp/music-remix-mb-1x.webp 3x" type="image/webp">
+                        <source media="(max-width:600px)" srcset="./main/mb/music-remix-mb-1x.jpg 1x, ./main/mb/music-remix-mb-2x.jpg 2x, ./main/mb/music-remix-mb-3x.jpg 3x" type="image/jpeg">
+                        <img class="hero-img" src="./main/mb/music-remix-mb-1x.jpg" alt="">
+                    </picture>
+                    <div class="section-control section-control-music section-control-music-third">
+                        <div class="container container-control">
+                            <div class="control-input-container control-input-container-music">
+                                <svg class="contol-svg control-svg-tab" width="24" height="24">
+                                    <use href="./symbol-defs.svg#note"></use>
+                                </svg>
+                                <div class="control-info-container ">
+                                    <h4 class="contol-title">Error Remix</h4>
+                                    <p class="control-desc">Alina Kopylova</p>
+                                </div>
+
+                                <div class="audio-player">
+                                    <audio class="audio" src="./music//alinaKopylova-ErrorRemix.wav"></audio>
                                     <div class="controls">
                                         <button class="btn-audio playPauseBtn">
                                             <svg width="24" height="20" class="control-svg">

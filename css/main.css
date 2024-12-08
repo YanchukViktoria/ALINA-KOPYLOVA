@@ -1115,8 +1115,10 @@ html {
     bottom: 100px;
   }
 }
-.section-control-music-third {
-  bottom: 172px;
+@media screen and (min-width: 744px) {
+  .section-control-music-third {
+    bottom: 174px;
+  }
 }
 
 .control-input[type=range] {

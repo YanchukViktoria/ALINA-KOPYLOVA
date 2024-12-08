@@ -99,7 +99,9 @@
             }
 
             &-third{
-                bottom: 172px;
+                @include tab(744px){
+                    bottom: 174px;
+                }
             }
         }
     }
